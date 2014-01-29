@@ -1,0 +1,12 @@
+
+RewriteEngine on
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW
+
+# Do not remove this line, otherwise mod_rewrite rules will stop working
+RewriteBase /
+
+RewriteCond %{HTTP_HOST} ^atneik\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.atneik\.com$
+RewriteRule ^/?$ "http\:\/\/me\.atneik\.com\/" [R=301,L]
+

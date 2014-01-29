@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Exploratory Data Analysis: Flight</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Aniket Handa">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="http://blog.atneik.com/theme/css/bootstrap.min.css" type="text/css" />
+    
+    <link href="http://blog.atneik.com/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="http://blog.atneik.com/theme/css/font-awesome.css" rel="stylesheet">
+    <link href="http://blog.atneik.com/theme/css/pygments.css" rel="stylesheet">
+    
+    <!--  Style -->
+<link href="http://blog.atneik.com/theme/css/main.css" rel="stylesheet">
+
+<!-- FancyBox -->
+<link href="http://blog.atneik.com/theme/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+
+<!-- Font Icons -->
+<link href="http://blog.atneik.com/theme/css/fonts.css" rel="stylesheet">
+
+<!-- Shortcodes -->
+<link href="http://blog.atneik.com/theme/css/shortcodes.css" rel="stylesheet">
+
+<!-- Google Font -->
+
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Titillium+Web:600,600italic,200,200italic,300,300italic,400,400italic' rel='stylesheet' type='text/css'>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="http://blog.atneik.com/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="http://blog.atneik.com/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://blog.atneik.com/theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://blog.atneik.com/theme/images/apple-touch-icon-114x114.png">
+
+    <link href="http://blog.atneik.com/" type="application/atom+xml" rel="alternate" title="Aniket Handa ATOM Feed" />
+
+  </head>
+
+  <body>
+
+<header>
+    <div class="sticky-nav">
+    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+        
+        <div id="logo">
+        	<a  href="http://blog.atneik.com/index.html" title="Aniket Handa">Aniket Handa</a>
+        </div>
+        
+        <nav id="menu">
+        	<ul id="menu-nav-blog">
+                
+                  <li class="active">
+                    <a href="http://blog.atneik.com/category/.html"></a>
+                  </li>
+                  <li >
+                    <a href="http://blog.atneik.com/category/studio.html">Studio</a>
+                  </li>
+              <!--
+              <li><a href="http://blog.atneik.com/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                
+                    <li><a href="http://blog.atneik.com/tags.html"><i class="icon-tag icon-large"></i>Tags</a></li>
+                -->  
+            </ul>
+        </nav>
+        
+    </div>
+</header>
+<!-- End Header -->
+
+<!-- Our Work Section -->
+<div id="work" class="page2">
+	<div class="container">
+        
+        <div class="row">   
+            <div class="span12">
+            	<div id="article">
+<section id="content">
+        <article>
+                <header>
+                        <h1>
+                                <a href=""
+                                        rel="bookmark"
+                                        title="Permalink to Exploratory Data Analysis: Flight">
+                                        Exploratory Data Analysis: Flight
+                                </a>
+                        </h1>
+                </header>
+                <div class="entry-content">
+                
+                <p>The <a href="http://courses.cs.washington.edu/courses/cse512/14wi/a2.html">second assignment</a> at CSE512 required us to explore huge datasets and find answers to interesting questions.</p>
+<h2>Exploratory Journey &amp; Analysis</h2>
+<p>I wanted to find that one question to which the answer (interpretation from visualization) is contradictory to common belief or at least the visualization should be rich and useful. So, I started asking questions with a hope to find something that results into unexpected. I first explored the flight dataset, then went to movie database and then again came back to flight data. Here I only show the exploration of flight dataset just to make it less complicated.</p>
+<h4>Flight Dataset</h4>
+<p>I mostly used Tableau for exploratory analysis. The first question that popped up when I saw the raw Flight data was that: </p>
+<p>1)  What’s the relation between all these Measures? Is Arrival Delay correlated to Departure delay?</p>
+<p>In particular, first I wanted to know if Flight Arrival Delay is correlated to Flight Departure Delay. Though obvious, I just wanted to confirm. And yes indeed Departure Delay is depended upon the Arrival delay. Then I looked at various other delay measures such as due to security, etc. Many of them were not richly populated and had null values. For finding patterns I plotted scatters plot matrix of Measures that made sense together and also analysed the trend line. The trend line gave an overview of the relationship.</p>
+<p>2)  Which State has the highest number of flights?</p>
+<p>As I was analysing all these measures I realized the trend changes sharply if categorized state wise. This led me to the above question, which was trivial to answer. But was interesting to see California, Texas, Georgia, Florida to have more flight records than on the east side.</p>
+<p><img alt="image" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/DataViz/a2-1.png" /> </p>
+<p>3)  Do States with high number of records suffer from more delays?</p>
+<p>I combined the above two questions. This resulted in predictable conclusion that most states with high flight traffic data do incur more delays than the ones with light flight traffic. </p>
+<p><img alt="image" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/DataViz/a2-2.png" /> </p>
+<p>4)  Are some Dimensions redundant?</p>
+<p>Then I hopped on to discover the Dimensions. While exploring them I couldn’t figure out the difference between few columns. So, I just plotted them against each other to see the points where they differ. I found that some of the columns are redundant, as in Unique Carrier, Carrier and Airline ID are nominal values, which remain same between two distinct data points. A quick background search gave the answer that Airline ID is actually the DOT ID issued to the Airline carrier for the plane. As the plane carrier doesn’t change very often these fields remained constant in the month of December 2009.</p>
+<p>5)  Is Airtime and delays related?</p>
+<p>No, I couldn’t find a compelling correspondence between any measure of delay and airtime of a flight. </p>
+<p>6)  Can we directly relate Carrier column with actual airline company?</p>
+<p>This column was pretty comprehensive and didn’t suffer from any ambiguities. There I could directly Alias all Carriers with actual airline name. I got this data by querying IATA.org.</p>
+<p>7)  Which all flights have large difference in Arrival delay and Departure delay?</p>
+<p>After getting flight names I was curious to see, which all airline companies introduce more delays during flight rather than covering up the time. For this I used a calculated field. The results showed that United Airlines added the most delay while Hawaiian Airlines was the best at covering up the lost time in case of a delayed flight. </p>
+<p><img alt="image" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/DataViz/a2-3.png" /> </p>
+<p>8)  What is the std. deviation of departure delay? Does it relate to average departure delay?</p>
+<p>It was interesting to find that as the average departure time increase there deviation of data also increases with respect a to particular airline. </p>
+<p><img alt="image" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/DataViz/a2-4.png" /> </p>
+<p>9)  How are delays at the city level?</p>
+<p>After having a good overview of delay information at the state level I went to city level. The list was long but interesting, as information about average delay can be useful to many.</p>
+<p>10)  But, How can I fit so many cities in a readable manner?</p>
+<p>I tired really hard to come up with various techniques to fit the information in small space in a human interpretable manner, but couldn’t find it exactly. What I did was I took top 25 busiest cities out of all for further analysis. For this I use filters by using ‘Sets’ feature in Tableau to select the top five cities with most number of flight records. </p>
+<p><img alt="image" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/DataViz/a2-5.png" /> </p>
+<p>11)  Does it vary according to arrival destination?</p>
+<p>There isn’t much point in knowing the delay only w.r.t origin city and not according to destination city, as the values varies a lot. So I made a 2D matrix of Origin and Destination city with delay times. Note, we use departure delay as departure and arrival were found to be quite correlated. The visualization wouldn’t change much if we use arrival delay instead.</p>
+<p><img alt="image" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/DataViz/a2-6.png" /> </p>
+<p>12)  How to fit and make it expressive?</p>
+<p>The visualization was again too big even after filtering with top 25 busiest cities. I tried various forms but wasn’t happy with the results. I wanted the end result to be easily understood.</p>
+<p><img alt="image" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/DataViz/a2-7.png" /> </p>
+<p><img alt="image" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/DataViz/a2-8.png" /> </p>
+<p>13) How about just average delay between these cites and not carrier information?</p>
+<p>This got me to this heat map.</p>
+<p><img alt="image" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/DataViz/a2-9.png" />  </p>
+<p>One can clearly see in the above visualization that Newark, NJ receives quite many delayed flights where as Chicago, IL departs many delayed flights. No wonder at the intersection of two, where the flight is from Chicago to Newark its deep red indicating a long delay from usual schedule.</p>
+<p>This map was interesting, but I was asking the question from a perspective of frequent flyer who wishes to know which airline to board which results in least delayed time.</p>
+<p>14)  Which flight should I board for the odds of incurring least delay at a particular Airport?</p>
+<p>This question was intriguing as it would be extremely helpful for people deciding upon which airline to choose. This question because my final question. I choose Seattle to answer this question and came up with the following rough visualization, which I later refined.</p>
+<p><img alt="image" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/DataViz/a2-10.png" /> </p>
+<p>This visualization could answer given the destination city that which airline would be the best bet if I want to incur least delay. I liked the fact that earlier heat map could give an overview of all flights departing. Therefore I added the features of the heat map to come up the final visualization.</p>
+<h4>Final Visualization</h4>
+<p><img alt="image" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/DataViz/a2-aniket.svg" /></p>
+<p><a href="https://dl.dropboxusercontent.com/u/23289062/siteImages/DataViz/a2-aniket.svg">SVG</a></p>
+<p>Q. Which flight should I board for the odds of incurring least delay at a particular Airport?</p>
+<p>The visualization is designed for frequent travellers who wish to quickly pick a carrier given an origin city, and where departure delay matters. Here the display is shown with respect to the origin city as Seattle but it could be easily be made for any other city. This could be used either at the origin city airport or at travel booking websites, facilitating better time schedules for travellers. For example, if I want to go to Chicago I might not rely on Alaska Airline whereas if I want to go to Houston the same Airline might be a reliable choice. A total number of 52 cities were reached from Seattle via flights (Dec, 2009). But, for not making the visualization too complicated, it only shows top 21 busiest airports from the city. The list of top 21 busiest airport is determined by the total number of flight records each city holds. The cities are listed in alphabetical order for a quick lookup. Average Departure delay is shown below, with a bar running from green to red. The central colour of the bar is at the average (which is 7.88 minutes for Seattle). The coloured bar serves the dual purpose of a colour redundant scale for departure delay and also serves as a key for circles in front of every city. The circles represent the overall departure delay for the particular city, calculated by averaging out all the flight data to that city. One can quickly discern that flights to Chicago, IL and Philadelphia, PA usually run late from Seattle. Also flights from Denver are not that delayed except for an outliner by SkyWest. One can also find interesting patterns by overviewing the data; like the pattern formed by blue squares gives a feeling that Alaska Airlines depart usually on time. The size of the squares represents the number of flights by that airline. It can also be seen by size of squares that Alaska Airlines is big in Seattle. No wonder Seattle is primary hub of Alaska Airline.</p>
+                </div><!-- /.entry-content -->
+                <div class="comments">
+                <h2>Comments !</h2>
+                        <div id="disqus_thread"></div>
+                        <script type="text/javascript">
+                           var disqus_identifier = "exploratory-analysis-of-flight-dataset-seattle.html";
+                           (function() {
+                                var dsq = document.createElement('script');
+                                dsq.type = 'text/javascript'; dsq.async = true;
+                                dsq.src = 'http://atneik.disqus.com/embed.js';
+                                (document.getElementsByTagName('head')[0] ||
+                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
+                          })();
+                        </script>
+                </div>
+        </article>
+</section>
+                     	
+                </div>
+            </div>
+        </div>
+        <!-- End Portfolio Projects -->
+    </div>
+</div>
+<!-- End Our Work Section -->
+
+<!-- Footer -->
+<footer>
+	<div class="container">
+		<nav>
+                <ul>
+                
+                </ul>
+            </nav>
+            
+		<div class="row-fluid credits">
+			<div class="span12">
+				&copy;2014 <a href="http://www.atneik.com/" title="Atneik">Atneik. </a>
+				<br>
+			</div>
+		</div>
+		
+	</div>
+</footer>
+<foot-filler>
+</foot-filler>
+<!-- End Footer -->
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'atneik';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Modernizr -->
+<script src="http://blog.atneik.com/theme/js/modernizr.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
+
+    <script src="http://blog.atneik.com/theme/js/bootstrap.min.js"></script>
+    <!-- Js -->
+<script src="http://blog.atneik.com/theme/js/bootstrap.min.js"></script> <!-- Bootstrap -->
+<script src="http://blog.atneik.com/theme/js/waypoints.js"></script> <!-- WayPoints -->
+<script src="http://blog.atneik.com/theme/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
+<script src="http://blog.atneik.com/theme/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
+<script src="http://blog.atneik.com/theme/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+<script src="http://blog.atneik.com/theme/js/main.js"></script> <!-- Default JS -->
+<!-- End Js -->
+  </body>
+</html>

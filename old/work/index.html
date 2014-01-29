@@ -1,0 +1,92 @@
+﻿<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Aniket Handa</title>
+
+	<link rel="stylesheet" href="style.css" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	<script type="text/javascript" src="slides.min.jquery.js"></script>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript">
+		WebFontConfig = {
+			google: { families: [ 'Lobster::latin' ] }
+		};
+		(function() {
+			var wf = document.createElement('script');
+			wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+			wf.type = 'text/javascript';
+			wf.async = 'true';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(wf, s);
+		})();
+
+		$(function(){
+			$("#portfolio").slides({
+				container: 'slider',
+				slideSpeed: 500,
+				play: 4000
+			});
+		  });
+
+		$(document).ready(function(){
+			$('a[href*=#]').click(function() {
+				if (location.pathname.replace(/^\//,") == this.pathname.replace(/^\//,")
+				&& location.hostname == this.hostname) {
+					var $target = $(this.hash);
+					$target = $target.length && $target
+					|| $('[name=' + this.hash.slice(1) +']');
+					if ($target.length) {
+						var targetOffset = $target.offset().top;
+						$('html,body')
+						.animate({scrollTop: targetOffset}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<nav id="top">
+		<ul>
+			<li><a href="http://me.atneik.com"> < Back</a></li>
+
+		</ul>
+	</nav>
+	
+<header id="head">
+	<section id="about">
+		<h1>Projects</h1>			
+	</section>
+	
+	<h3> Skulpturous</h3>
+	<div style="text-align:center">
+		<iframe width="853" height="480" src="http://www.youtube.com/embed/TgfAg3GmP1c" frameborder="0" allowfullscreen></iframe>
+	</div>
+	&nbsp;
+	<div style="text-align:center">
+		<iframe width="853" height="480" src="http://www.youtube.com/embed/f3MubFYdEtw" frameborder="0" allowfullscreen></iframe>	
+	</div>
+	&nbsp;
+	<div style="text-align:center">
+		<iframe width="853" height="480" src="http://www.youtube.com/embed/cFpJOYgHD3g" frameborder="0" allowfullscreen></iframe>
+	</div>
+	&nbsp;
+	
+	<span class="separator"></span>
+	
+	<h3> Rest under construction</h3>	
+	<h2 class="desc">check back soon..</h2>
+
+	<span class="separator"></span>
+
+	<section id="footer">
+		<p>Aniket Handa © 2012</p>
+	</section>
+	
+</body>
+</html>

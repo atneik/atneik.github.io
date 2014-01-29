@@ -41,12 +41,10 @@
 <link href="blog/theme/css/responsive.css" rel="stylesheet">
 
 <!-- Google Font -->
-
-<link href='http://fonts.googleapis.com/css?family=Titillium+Web:600,600italic,200,200italic,300,300italic,400,400italic' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
 
 <!-- Fav Icon -->
-<link rel="icon" type="image/ico" href="http://www.atneik.com/favicon.ico">
+<link rel="shortcut icon" href="#">
 
 <link rel="apple-touch-icon" href="#">
 <link rel="apple-touch-icon" sizes="114x114" href="#">
@@ -58,12 +56,19 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
 
+<script type="text/javascript">
+	
+	function getURLParameter(name) {
+    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;
+}
+
+</script>
 
 <!-- Analytics -->
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-30930227-1']);
+  _gaq.push(['_setAccount', 'Insert Your Code']);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -78,7 +83,7 @@
 </head>
 
 
-<body onload="">
+<body>
 
 <!-- This section is for Splash Screen -->
 <section id="jSplash">
@@ -91,19 +96,20 @@
 <!-- Header -->
 <header>
     <div class="sticky-nav">
-    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
-        
+    	        
         <div id="logo">
-        	<a  href="http://atneik.com" title="Aniket Handa">Aniket Handa</a>
+        	<a href="index.html" title="Aniket Handa">Aniket Handa</a>
         </div>
         
-        <nav id="menu">
-        	<ul id="menu-nav">
-                <li id="menu-work-li" class="current"><a href="#work">Work</a></li>
-                <li id="menu-about-li"><a href="#about">About</a></li>
-            </ul>
-        </nav>
         
+        <div id="right">
+        <ul id="rightList">
+        	<li><a href="index.html"> <i class="font-icon-grid"> </i></a></li>
+        	<li id = "rightPrev"></li>
+        	<li id = "rightNext"></li>        
+        
+        </ul>
+        </div>       
     </div>
 </header>
 <!-- End Header -->
@@ -112,27 +118,34 @@
 <div id="work" class="page2">
 	<div class="container">
         
-        <div class="row-fluid">
-			<div class="span12">
-			        <div class="title-page">
-				        <h2 class="profile-name">Under Construction</h2>
-				    </div>
-		    </div>
-		</div>
-        
         <div class="row">   
             <div class="span12">
-            	<div class="row">
-                	<section id="projects">
-                    	<ul id="thumbs">
+            	<div id="project">
                         
 							  <script>
+							  	
 								  $(document).ready(function(){
+								  		
+								  		var requestId=getURLParameter('id');
+								  		if(requestId == null)
+								  		{
+									  		window.location = "index.html";
+								  		}
+								  		
+						        		projectNext = parseInt(requestId) + 1;
+						        		projectPrev = parseInt(requestId) - 1;
+						        		
+						        		
+						        		$("#rightPrev").append('<a href="project.html?id=' + projectPrev + '"<i class="font-icon-arrow-simple-left"> </i></a>');
+						        		$("#rightNext").append('<a href="project.html?id=' + projectNext + '"<i class="font-icon-arrow-simple-right"> </i></a>');
+						        		
+
 									  $.ajax({
 										  type: "GET",
 										  url: "work.xml",
 										  dataType: "xml",
 										  success: function(xml) {
+										  		var flag = true;
 											  $(xml).find('project').each(function(){
 												  var id = $(this).attr('id');
 												  var title = $(this).find('title').text();
@@ -140,99 +153,36 @@
 												  var url = $(this).find('url').text();
 												  var classname = $(this).find('classname').text();
 												  var imagesrc = $(this).find('imagesrc').text();
-				
-												  $('<li class="' + classname + '">').html('<a title="' + title + '" href="'+url+'" > <div class="overlay">' + subtitle + '</div> <img src="' + imagesrc + '" alt=""> </a>').appendTo('#thumbs');
+												  var data = $(this).find('data').text();
+												  
+												  
+												  if(id == requestId){
+												  $('<h2> </h2>').html(title).appendTo('#project');
+												  
+												  $('<p> </p>').html(data).appendTo('#project');
+												  flag = false;
+												  }
 											});
+											
+											if(flag){
+												window.location = "index.html";
+												}
+											
+											
 										}
 									});
+									
+									
 								});
 							  </script>
                      	
-                        </ul>
-                    </section>
-                    
-            	</div>
+                        </div>
             </div>
         </div>
         <!-- End Portfolio Projects -->
     </div>
 </div>
 <!-- End Our Work Section -->
-
-<!-- About Section -->
-<div id="about" class="page">
-	<div class="container">
-	
-		<div class="row-fluid">
-			<div class="span12">
-			        <div class="title-page">
-				        <h2 class="profile-name">Aniket Handa</h2>
-				    </div>
-		    </div>
-		</div>
-    
-		<div class="row-fluid">
-			<div class="span4"></div>
-    		<div class="span4 profile">
-        		<div class="image-wrap">
-                	<a href="http://en.gravatar.com/anikethanda262">
-                		<img src="http://www.gravatar.com/avatar/afcde942cfc8ffa1867c37939ebf057e?s=300" alt="Aniket Handa">
-                	</a>
-                </div>
-            </div>
-            <div class="span4"></div>   
-        </div>
-        
-        <div class="row-fluid">
-			<div class="span12">
-			        <div class="title-page">
-				        <h3>dream. design. develop</h3>
-				    </div>
-		    </div>
-		</div>
-		
-        <div class="row-fluid">
-        	<div class="span1"></div>
-        	<div class="span10 profile">    
-             	<p class="profile-description">Hi! I am working towards creating new experiences using technology. As a software developer I give some special treatment to Image processing, Computer Vision and Mobile Apps. I enjoy developing, dreaming and photography. <br/> <br/>A wanderlust. 
-
-             	</p>
-            </div>
-            <div class="span1"></div>  	
-        </div> 
-    </div>
-    
-    <div id="social-area" class="container">
-	<div class="row">
-           <div class="span12">
-            <div class="title-page">
-               
-                <h3 class="title-description">aniket <i class="font-icon-social-email" style="font-size: 18px"></i> uw.edu</h3>
-                
-            </div>
-        </div>
-
-    </div>
-    	<div class="row">
-            <div class="span12">
-                <nav id="social">
-                    <ul>
-                        <li><a href="http://twitter.com/atneik" title="Follow Me on Twitter" target="_blank"><span class="font-icon-social-twitter"></span></a></li>
-                        <li><a href="http://www.facebook.com/atneik" title="Follow Me on Facebook" target="_blank"><span class="font-icon-social-facebook"></span></a></li>
-                        
-                        <li><a href="http://www.linkedin.com/in/atneik" title="Follow Me on LinkedIn" target="_blank"><span class="font-icon-social-linkedin"></span></a></li>
-                        <li><a href="http://www.github.com/atneik" title="Fork me on Github" target="_blank"><span class="font-icon-social-github"></span></a></li>
-                        <li><a href="http://blog.atneik.com" title="Follow my Blog" target="_blank"><span class="font-icon-book"></span></a></li>
-                        
-                        
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </div>
-    
-</div>
-<!-- End About Section -->
 
 <!-- Footer -->
 <footer>
@@ -247,6 +197,13 @@
 	</div>
 </footer>
 <!-- End Footer -->
+
+<!-- Back To Top -->
+<a id="back-to-top" href="#">
+	<i class="font-icon-arrow-simple-up"></i>
+</a>
+<!-- End Back to Top -->
+
 
 <!-- Js -->
 <script src="blog/theme/js/bootstrap.min.js"></script> <!-- Bootstrap -->
