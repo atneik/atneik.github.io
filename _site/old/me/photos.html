@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Aniket Handa</title>
+
+	<link rel="stylesheet" href="style.css" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	<script type="text/javascript" src="slides.min.jquery.js"></script>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript">
+		WebFontConfig = {
+			google: { families: [ 'Lobster::latin' ] }
+		};
+		(function() {
+			var wf = document.createElement('script');
+			wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+			wf.type = 'text/javascript';
+			wf.async = 'true';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(wf, s);
+		})();
+
+		$(function(){
+			$("#portfolio").slides({
+				container: 'slider',
+				slideSpeed: 500,
+				play: 4000
+			});
+		  });
+
+		$(document).ready(function(){
+			$('a[href*=#]').click(function() {
+				if (location.pathname.replace(/^\//,") == this.pathname.replace(/^\//,")
+				&& location.hostname == this.hostname) {
+					var $target = $(this.hash);
+					$target = $target.length && $target
+					|| $('[name=' + this.hash.slice(1) +']');
+					if ($target.length) {
+						var targetOffset = $target.offset().top;
+						$('html,body')
+						.animate({scrollTop: targetOffset}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	
+
+	<nav id="top">
+		<ul>
+			<li><a href="index.html"> < Back</a></li>
+
+		</ul>
+	</nav>
+
+<section id="albums">
+		<h3>Assorted</h3>
+</section>
+	<div style="text-align:center">
+	<embed type="application/x-shockwave-flash" src="https://picasaweb.google.com/s/c/bin/slideshow.swf" width="800" height="533" flashvars="host=picasaweb.google.com&hl=en_US&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F106918276795252384241%2Falbumid%2F5624037815939443249%3Falt%3Drss%26kind%3Dphoto%26hl%3Den_US" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+		</div>
+		
+		<span class="separator"></span>
+<section id="albums">		
+		<h3>Artistic</h3>
+</section>
+		<div style="text-align:center">
+	<embed type="application/x-shockwave-flash" src="https://picasaweb.google.com/s/c/bin/slideshow.swf" width="800" height="533" flashvars="host=picasaweb.google.com&hl=en_US&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F106918276795252384241%2Falbumid%2F5703144155374677873%3Falt%3Drss%26kind%3Dphoto%26hl%3Den_US" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+	</div>
+	<span class="separator"></span>
+	
+</body>
+</html>

@@ -1,0 +1,3 @@
+jQuery Slider: http://slidesjs.com/
+Scrolling Effect: http://www.agent-seo.com/web-design/jquery-scrolling-effect/
+transparent bg ie hacks: http://nickcowie.com/2009/rgba-backgrounds-in-ie/
