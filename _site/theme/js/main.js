@@ -240,6 +240,11 @@ BRUSHED.accordion = function(){
 	});
 }
 
+BRUSHED.randomHue = function(){
+	var randomH = Math.floor(Math.random()*270).toString();
+	document.body.style.backgroundColor = "hsl(" + randomH + ", 25%, 75%)";
+}
+
 /* ==================================================
    Toggle
 ================================================== */
@@ -296,7 +301,8 @@ $(document).ready(function(){
 	BRUSHED.accordion();
 	BRUSHED.toggle();
 	BRUSHED.toolTip();
-	BRUSHED.showNavShadow(); 
+	BRUSHED.showNavShadow();
+	BRUSHED.randomHue();
 });
 
 $(window).resize(function(){

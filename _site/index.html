@@ -3,260 +3,229 @@
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
 <!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
-<head>
-
-<!-- Meta Tags -->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-<title>Aniket Handa</title>   
-
-<meta name="description" content="Personal webspace of Aniket Handa" /> 
-
-<!-- Mobile Specifics -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="HandheldFriendly" content="true"/>
-<meta name="MobileOptimized" content="320"/>   
-
-<!-- Mobile Internet Explorer ClearType Technology -->
-<!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
-
-<!-- Bootstrap -->
-<link href="theme/css/bootstrap.min.css" rel="stylesheet">
-
-<!--  Style -->
-<link href="theme/css/main.css" rel="stylesheet">
-
-<!-- FancyBox -->
-<link href="theme/css/fancybox/jquery.fancybox.css" rel="stylesheet">
-
-<!-- Font Icons -->
-<link href="theme/css/fonts.css" rel="stylesheet">
-
-<!-- Shortcodes -->
-<link href="theme/css/shortcodes.css" rel="stylesheet">
-
-<!-- Responsive -->
-<link href="theme/css/bootstrap-responsive.min.css" rel="stylesheet">
-<link href="theme/css/responsive.css" rel="stylesheet">
-
-<!-- Google Font -->
-
-<link href='http://fonts.googleapis.com/css?family=Titillium+Web:600,600italic,200,200italic,300,300italic,400,400italic' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,400italic' rel='stylesheet' type='text/css'>
-
-<!-- Fav Icon -->
-<link rel="icon" type="image/ico" href="http://www.atneik.com/favicon.ico">
-
-<link rel="apple-touch-icon" href="#">
-<link rel="apple-touch-icon" sizes="114x114" href="#">
-<link rel="apple-touch-icon" sizes="72x72" href="#">
-<link rel="apple-touch-icon" sizes="144x144" href="#">
-
-<!-- Modernizr -->
-<script src="theme/js/modernizr.js"></script>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
-
-
-<!-- Analytics -->
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-30930227-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-<!-- End Analytics -->
-
-</head>
-
-
-<body onload="">
-
-<!-- This section is for Splash Screen -->
-<section id="jSplash">
-	<div id="circle"></div>
-</section>
-
-<!-- End of Splash Screen -->
-
-
-<!-- Header -->
-<header>
-    <div class="sticky-nav">
-    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+<!--[if gt IE 8]><!-->
+<html  lang="en-US">
+	<head>
+    	<title></title>
         
-        <div id="logo">
-        	<a  href="http://atneik.com" title="Aniket Handa">Aniket Handa</a>
-        </div>
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="Personal webspace of Aniket Handa" />
+        <!-- Mobile Internet Explorer ClearType Technology -->
+        <!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
         
-        <nav id="menu">
-        	<ul id="menu-nav">
-                <li id="menu-work-li" class="current"><a href="#work">Work</a></li>
-                <li id="menu-about-li"><a href="#about">About</a></li>
-            </ul>
-        </nav>
+        <!-- Mobile Specifics -->
+        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="MobileOptimized" content="320"/>
         
-    </div>
-</header>
-<!-- End Header -->
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]-->
 
-<!-- Our Work Section -->
-<div id="work" class="page2">
-	<div class="container">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
         
-        <!--
-        <div class="row-fluid">
-			<div class="span12">
-			        <div class="title-page">
-				        <h2 class="profile-name">Under Construction</h2>
-				    </div>
-		    </div>
-		</div>
-        -->
-        <div class="row">   
-            <div class="span12">
-            	<div class="row">
-                	<section id="projects">
-                    	<ul id="thumbs">
-                        
-							  <script>
-								  $(document).ready(function(){
-									  $.ajax({
-										  type: "GET",
-										  url: "work.xml",
-										  dataType: "xml",
-										  success: function(xml) {
-											  $(xml).find('project').each(function(){
-												  var id = $(this).attr('id');
-												  var title = $(this).find('title').text();
-												  var subtitle = $(this).find('subtitle').text();
-												  var url = $(this).find('url').text();
-												  var classname = $(this).find('classname').text();
-												  var imagesrc = $(this).find('imagesrc').text();
-				
-												  $('<li class="' + classname + '">').html('<a title="' + title + '" href="'+url+'" > <div class="overlay">' + subtitle + '</div> <img src="' + imagesrc + '" alt=""> </a>').appendTo('#thumbs');
-											});
-										}
-									});
-								});
-							  </script>
-                     	
-                        </ul>
-                    </section>
-                    
-            	</div>
-            </div>
-        </div>
-        <!-- End Portfolio Projects -->
-    </div>
-</div>
-<!-- End Our Work Section -->
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/theme/css/main.css">
 
-<!-- About Section -->
-<div id="about" class="page">
-	<div class="container">
-	
-		<div class="row-fluid">
-			<div class="span12">
-			        <div class="title-page">
-				        <h2 class="profile-name">Aniket Handa</h2>
-				    </div>
-		    </div>
-		</div>
-    
-		<div class="row-fluid">
-			<div class="span4"></div>
-    		<div class="span4 profile">
-        		<div class="image-wrap">
-                	<a href="http://en.gravatar.com/anikethanda262">
-                		<img src="http://www.gravatar.com/avatar/afcde942cfc8ffa1867c37939ebf057e?s=300" alt="Aniket Handa">
-                	</a>
-                </div>
-            </div>
-            <div class="span4"></div>   
-        </div>
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/theme/css/syntax.css">
         
-        <div class="row-fluid">
-			<div class="span12">
-			        <div class="title-page">
-				        <h3>dream. design. develop</h3>
-				    </div>
-		    </div>
-		</div>
+        <!-- FancyBox -->
+		<link href="/theme/css/fancybox/jquery.fancybox.css" rel="stylesheet">
 		
-        <div class="row-fluid">
-        	<div class="span1"></div>
-        	<div class="span10 profile">    
-             	<p class="profile-description">Hi! I am working towards creating new experiences using technology. As a software developer I give some special treatment to Image processing, Computer Vision and Mobile Apps. I enjoy developing, dreaming and photography. <br/> </br> Find more interesting stuff at <a href= "posts.html">my blog</a>. 
+		<!-- Font Icons -->
+		<link href="/theme/css/fonts.css" rel="stylesheet">
+		
+		<!-- Shortcodes -->
+		<link href="/theme/css/shortcodes.css" rel="stylesheet">
+		
+		<!-- Google Font -->
+		
+		<link href='http://fonts.googleapis.com/css?family=Titillium+Web:600,600italic,200,200italic,300,300italic,400,400italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,400italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,400,300' rel='stylesheet' type='text/css'>
+		
+		<!-- Fav Icon -->
+		<link rel="icon" type="image/ico" href="favicon.ico">
+		
+		<link rel="apple-touch-icon" href="#">
+		<link rel="apple-touch-icon" sizes="114x114" href="#">
+		<link rel="apple-touch-icon" sizes="72x72" href="#">
+		<link rel="apple-touch-icon" sizes="144x144" href="#">
+		
+		
+		<!-- Analytics -->
+		<script type="text/javascript">
+		
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-30930227-1']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		
+		</script>
+		<!-- End Analytics -->
 
-             	</p>
-            </div>
-            <div class="span1"></div>  	
-        </div> 
-    </div>
+    </head>
     
-    <div id="social-area" class="container">
+    <body onload="">
+    
+    	<!-- This section is for Splash Screen -->
+		<section id="jSplash">
+			<div id="circle"></div>
+		</section>
+		<!-- End of Splash Screen -->
+		
+		<!-- Header -->
+		<header>
+		    <div class="sticky-nav">
+		    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+		        
+		        <div id="logo">
+		        	<a  href="/" title="Aniket Handa">Aniket Handa</a>
+		        </div>
+		        
+		        <nav id="menu">
+		        	<ul id="menu-nav">
+		                <li id="menu-work-li" class="current"><a href="/#work">Work</a></li>
+		                <li id="menu-about-li"><a href="/#about">About</a></li>
+		            </ul>
+		        </nav>
+		        
+		    </div>
+		</header>
+		<!-- End Header -->
+		
+		<div id="work" class="container">
 	<div class="row">
-           <div class="span12">
-            <div class="title-page">
-               
-                <h3 class="title-description">aniket <i class="font-icon-social-email" style="font-size: 18px"></i> uw.edu</h3>
-                
-            </div>
-        </div>
-
-    </div>
-    	<div class="row">
-            <div class="span12">
-                <nav id="social">
-                    <ul>
-                        <li><a href="http://twitter.com/atneik" title="Follow Me on Twitter" target="_blank"><span class="font-icon-social-twitter"></span></a></li>
-                        <li><a href="http://www.facebook.com/atneik" title="Follow Me on Facebook" target="_blank"><span class="font-icon-social-facebook"></span></a></li>
-                        
-                        <li><a href="http://www.linkedin.com/in/atneik" title="Follow Me on LinkedIn" target="_blank"><span class="font-icon-social-linkedin"></span></a></li>
-                        <li><a href="http://www.github.com/atneik" title="Fork me on Github" target="_blank"><span class="font-icon-social-github"></span></a></li>
-                        <li><a href="posts.html" title="Follow my Blog" target="_blank"><span class="font-icon-book"></span></a></li>
-                        
-                        
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </div>
-    
-</div>
-<!-- End About Section -->
-
-<!-- Footer -->
-<footer>
-	<div class="container">
+	
 		
-		<div class="row-fluid credits">
-			<div class="span12">
-				&copy;2014 <a href="http://www.atneik.com/" title="Atneik">Atneik. </a>
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+		<a href="/project/2014/01/12/UW-Q1-RevealCare.html">
+		<div class="col-md-4 page">
+			<img class="img-responsive" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/BodyData/revealcare.png">
+			Can transparency in health care help us make wise medical decisions?
+		</div>
+		</a>
+		
+	
+		
+		<a href="/project/2014/01/12/UW-BodyData.html">
+		<div class="col-md-4 page">
+			<img class="img-responsive" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/BodyData/body.jpg">
+			Can constantly tracking certain body signals provide value in long run?
+		</div>
+		</a>
+		
+	
+		
+		<a href="/project/2014/01/12/JIIT-Skulpturous.html">
+		<div class="col-md-4 page">
+			<img class="img-responsive" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/BodyData/logo-sk.png">
+			In this upcoming 3D revolution, can we bring 3D content creation to masses?
+		</div>
+		</a>
+		
+	
+	</div>
+</div>
+
+<div id="about" class="container page">
+	<div class="row">
+		
+			<div class="col-lg-5 col-md-5">
+				<img class="img-responsive" src="http://www.gravatar.com/avatar/afcde942cfc8ffa1867c37939ebf057e?s=300" alt="Aniket image">
+            </div>
+
+            <div class="col-lg-7 col-md-7">
+                <h2>Aniket Handa</h2>
+                <h3>dream. design. develop</h3>
+                <p>Hi! I am working towards creating new experiences using technology. As a software developer I give some special treatment to Image processing, Computer Vision and Mobile Apps. I enjoy developing, dreaming and photography. <br/> Find more interesting stuff at <a href= "posts.html">my blog</a></p>
+            </div>
+		
+	</div>
+	<div id="social-area">
+		<div class="row">
+			<div class="col-lg-12">
+				<h3>aniket <i class="font-icon-social-email" style="font-size: 18px"></i> uw.edu</h3>
 			</div>
 		</div>
 		
+		<div class="row">
+			<div class="col-lg-12">
+				<nav id="social">
+	                    <ul>
+	                        <li><a href="http://twitter.com/atneik" title="Follow Me on Twitter" target="_blank"><span class="font-icon-social-twitter"></span></a></li>
+	                        <li><a href="http://www.facebook.com/atneik" title="Follow Me on Facebook" target="_blank"><span class="font-icon-social-facebook"></span></a></li>
+	                        <li><a href="http://www.linkedin.com/in/atneik" title="Follow Me on LinkedIn" target="_blank"><span class="font-icon-social-linkedin"></span></a></li>
+	                        <li><a href="http://www.github.com/atneik" title="Fork me on Github" target="_blank"><span class="font-icon-social-github"></span></a></li>
+	                        <li><a href="posts.html" title="Follow my Blog" target="_blank"><span class="font-icon-book"></span></a></li>
+	                    </ul>
+	            </nav>
+			</div>
+		</div>
 	</div>
-</footer>
-<!-- End Footer -->
+</div>
+        
+        <!-- Footer -->
+		<footer>
+			<div class="container">
+				
+				<div class="row-fluid credits">
+					<div class="span12">
+						&copy;2014 <a href="/" title="Atneik">Atneik. </a>
+					</div>
+				</div>
+				
+			</div>
+		</footer>
+		<!-- End Footer -->
+		
+		<!-- Js -->
+		<!-- Modernizr -->
+		<script src="/theme/js/modernizr.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> <!-- Bootstrap -->
+		<script src="/theme/js/waypoints.js"></script> <!-- WayPoints -->
+		<script src="/theme/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
+		<script src="/theme/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
+		<script src="/theme/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+		<script src="/theme/js/main.js"></script> <!-- Default JS -->
+		<!-- End Js -->
 
-<!-- Js -->
-<script src="theme/js/bootstrap.min.js"></script> <!-- Bootstrap -->
-<script src="theme/js/waypoints.js"></script> <!-- WayPoints -->
-<script src="theme/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
-<script src="theme/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
-<script src="theme/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
-<script src="theme/js/main.js"></script> <!-- Default JS -->
-<!-- End Js -->
-
-</body>
+    </body>
 </html>
