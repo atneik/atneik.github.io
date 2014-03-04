@@ -1,7 +1,7 @@
 ---
 title: "Body Data"
 subtitle: "Can constantly tracking certain body signals provide value in long run?"
-layout: project
+layout: post
 date: 2014-1-12 10:20
 categories: project
 tags:

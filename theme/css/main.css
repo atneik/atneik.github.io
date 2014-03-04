@@ -397,7 +397,7 @@ header #right li a{
 	text-transform: uppercase;
 	
 	
-	color: rgb(222,222,222);
+	/*color: rgb(222,222,222);*/
 	
 	opacity: 1;
 	filter: alpha(opacity=100);

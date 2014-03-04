@@ -1,7 +1,7 @@
 ---
 title: "Reveal Care"
 subtitle: "Can transparency in health care help us make wise medical decisions?"
-layout: project
+layout: post
 date: 2014-1-12 10:20
 categories: project
 tags:

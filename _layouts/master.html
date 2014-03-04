@@ -6,7 +6,7 @@
 <!--[if gt IE 8]><!-->
 <html  lang="en-US">
 	<head>
-    	<title></title>
+    	<title>{{ page.title }}</title>
         
         <!-- Meta Tags -->
         <meta charset="utf-8">
@@ -81,88 +81,7 @@
     
     <body onload="">
 		
-		<!-- Header -->
-		<header>
-		    <div class="sticky-nav">
-		    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
-		        
-		        <div id="logo">
-		        	<a  href="/" title="Aniket Handa">Aniket Handa</a>
-		        </div>
-		        
-		        <nav id="menu">
-		        	<ul id="menu-nav">
-		                <li id="menu-work-li" class="current"><a href="/#work">Work</a></li>
-		                <li id="menu-about-li"><a href="/#about">About</a></li>
-		            </ul>
-		        </nav>
-		        
-		    </div>
-		</header>
-<!-- End Header -->
-<div id="work" class="container">
-	<div class="row">
-	
-		<a href="/project/2014/01/12/UW-Q1-RevealCare.html">
-		<div class="col-md-4 page">
-			<img class="img-responsive" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/BodyData/revealcare.png">
-			Can transparency in health care help us make wise medical decisions?
-		</div>
-		</a>
-	
-		<a href="/project/2014/01/12/UW-BodyData.html">
-		<div class="col-md-4 page">
-			<img class="img-responsive" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/BodyData/body.jpg">
-			Can constantly tracking certain body signals provide value in long run?
-		</div>
-		</a>
-	
-		<a href="/project/2014/01/12/JIIT-Skulpturous.html">
-		<div class="col-md-4 page">
-			<img class="img-responsive" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/BodyData/logo-sk.png">
-			In this upcoming 3D revolution, can we bring 3D content creation to masses?
-		</div>
-		</a>
-	
-	</div>
-</div>
-
-<div id="about" class="container page">
-	<div class="row">
-		
-			<div class="col-lg-5 col-md-5">
-				<img class="img-responsive" src="http://www.gravatar.com/avatar/afcde942cfc8ffa1867c37939ebf057e?s=300" alt="Aniket image">
-            </div>
-
-            <div class="col-lg-7 col-md-7">
-                <h2>Aniket Handa</h2>
-                <h3>dream. design. develop</h3>
-                <p>Hi! I am working towards creating new experiences using technology. As a software developer I give some special treatment to Image processing, Computer Vision and Mobile Apps. I enjoy developing, dreaming and photography. <br/> Find more interesting stuff at <a href= "posts.html">my blog</a></p>
-            </div>
-		
-	</div>
-	<div id="social-area">
-		<div class="row">
-			<div class="col-lg-12">
-				<h3>aniket <i class="font-icon-social-email" style="font-size: 18px"></i> uw.edu</h3>
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="col-lg-12">
-				<nav id="social">
-	                    <ul>
-	                        <li><a href="http://twitter.com/atneik" title="Follow Me on Twitter" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
-	                        <li><a href="http://www.facebook.com/atneik" title="Follow Me on Facebook" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
-	                        <li><a href="http://www.linkedin.com/in/atneik" title="Follow Me on LinkedIn" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
-	                        <li><a href="http://www.github.com/atneik" title="Fork me on Github" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
-	                        <li><a href="posts.html" title="Follow my Blog" target="_blank"><i class="fa fa-book fa-2x"></i></a></li>
-	                    </ul>
-	            </nav>
-			</div>
-		</div>
-	</div>
-</div>
+		{{ content }}
         
         <!-- Footer -->
 		<footer>
