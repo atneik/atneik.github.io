@@ -120,7 +120,7 @@ BRUSHED.menu = function(){
 		currentClass: 'current',
     	changeHash: false,
     	scrollSpeed: 750,
-    	scrollOffset: 30,
+    	scrollOffset: 60,
     	scrollThreshold: 0.5,
 		easing: 'easeOutExpo',
 		filter: ':not(.external)'
@@ -138,61 +138,6 @@ BRUSHED.goSection = function(){
 		$('body, html').animate({scrollTop : $target}, 750, 'easeOutExpo');
 		return false;
 	});
-}
-
-/* ==================================================
-	Scroll to Top
-================================================== */
-
-BRUSHED.scrollToTop = function(){
-	var windowWidth = $(window).width(),
-		didScroll = false;
-
-	var $arrow = $('#back-to-top');
-
-	$arrow.click(function(e) {
-		$('body,html').animate({ scrollTop: "0" }, 750, 'easeOutExpo' );
-		e.preventDefault();
-	})
-
-	$(window).scroll(function() {
-		didScroll = true;
-	});
-
-	setInterval(function() {
-		if( didScroll ) {
-			didScroll = false;
-
-			if( $(window).scrollTop() > 1000 ) {
-				$arrow.css('display', 'block');
-			} else {
-				$arrow.css('display', 'none');
-			}
-		}
-	}, 250);
-}
-
-/* ==================================================
-	Nav Shadow hide/show
-================================================== */
-
-BRUSHED.showNavShadow = function(){
-
-	$(function() {
-    	$(window).scroll(function() {
-        	var top = $(document).scrollTop();
-        	var $navbar = $('div.sticky-nav.stuck');
-        	//console.log(top);
-        		if (top >30) {
-        			$navbar.css({'-webkit-box-shadow': '0 3px 5px rgba(125, 125, 125, 0.9)',
-	'-moz-box-shadow': '0 3px 5px rgba(125, 125, 125, 0.9)',
-	'box-shadow': '0 3px 5px rgba(0, 0, 0, 0.4)'});  		
-        		}
-        		else{
-	        		$navbar.css({'-webkit-box-shadow':'', '-moz-box-shadow':'', 'box-shadow':''});
-        		}
-        }).triggerHandler("scroll");
-    });	
 }
 
 /* ==================================================

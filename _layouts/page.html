@@ -3,6 +3,7 @@ layout: master
 ---
 <!-- Header -->
 		<header>
+			<!--
 		    <div class="sticky-nav">
 		    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
 		        
@@ -16,8 +17,20 @@ layout: master
 		                <li id="menu-about-li"><a href="/#about">About</a></li>
 		            </ul>
 		        </nav>
-		        
 		    </div>
+		    -->
+		    <div class="sticky-nav">
+		    	<div id="logo">
+		        	<a  href="/" title="Aniket Handa">{{ site.name }}</a>
+		        </div>
+		        <nav id="menu">
+				    <ul class="nav nav-tabs">
+						  <li id="menu-work-li"><a href="#work">Work</a></li>
+						  <li><a href="/posts.html">Blog</a></li>
+						  <li><a href="#about">About</a></li>
+					</ul>
+		        </nav>
+			</div>
 		</header>
 <!-- End Header -->
 {{ content }}

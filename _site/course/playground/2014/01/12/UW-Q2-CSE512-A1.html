@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html  lang="en-US">
+	<head>
+    	<title>Visualizing Burtin's Antibiotic Dataset</title>
+        
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="Personal webspace of Aniket Handa" />
+        <!-- Mobile Internet Explorer ClearType Technology -->
+        <!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
+        
+        <!-- Mobile Specifics -->
+        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="MobileOptimized" content="320"/>
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/theme/css/main.css">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/theme/css/syntax.css">
+        
+        <!-- FancyBox -->
+		<link href="/theme/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+		
+		<!-- Font Icons -->
+		<link href="/theme/css/fonts.css" rel="stylesheet">
+		
+		<!-- Google Font -->
+		
+		<link href='http://fonts.googleapis.com/css?family=Titillium+Web:600,600italic,200,200italic,300,300italic,400,400italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,400italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,400,300' rel='stylesheet' type='text/css'>
+		
+		<!-- Fav Icon -->
+		<link rel="icon" type="image/ico" href="favicon.ico">
+		
+		<link rel="apple-touch-icon" href="#">
+		<link rel="apple-touch-icon" sizes="114x114" href="#">
+		<link rel="apple-touch-icon" sizes="72x72" href="#">
+		<link rel="apple-touch-icon" sizes="144x144" href="#">
+		
+		
+		<!-- Analytics -->
+		<script type="text/javascript">
+		
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-30930227-1']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		
+		</script>
+		<!-- End Analytics -->
+
+    </head>
+    
+    <body onload="">
+		
+		<!-- This section is for Splash Screen -->
+		<section id="jSplash">
+			<div id="circle"></div>
+		</section>
+<!-- End of Splash Screen -->
+
+<!-- Header -->
+<header id="post">
+    <div class="sticky-nav">
+    	        
+        <div id="logo">
+        	<a href="/" title="Aniket Handa">Aniket Handa</a>
+        </div>
+        
+        
+        <div id="right">
+        <ul id="rightList">
+        	<li><a href="/posts.html"> <i class="fa fa-list-ul"></i></i></i></a></li>
+        	
+        		<li id = "rightNext"><a href="/studio/playground/2014/01/13/UW-Q2-Studio-E1.html"><i class="fa fa-chevron-left"></i></a></li>      
+        	
+        	
+        		<li id = "rightPrev"><a href="/project/2014/01/12/UW-Q1-RevealCare.html"><i class="fa fa-chevron-right"></i></a></li>
+        	
+        </ul>
+        </div>       
+    </div>
+</header>
+<!-- End Header -->
+
+<div class="container">
+	<div class="row">
+		<div class="page">
+			<h1>Visualizing Burtin's Antibiotic Dataset</h1>
+			<p class="meta" style="text-align: center">
+				12 Jan 2014
+			</p>
+			<div class="post">
+				<p>This Quarter I&#39;m taking CSE512: Data Visualization class by <a href="http://homes.cs.washington.edu/%7Ejheer/">Jeff Heer</a>. The <a href="http://courses.cs.washington.edu/courses/cse512/14wi/a1.html">first assignment</a> required us to design a visualization for the Burtin&#39;s Antibiotic dataset. This is what I came up with: </p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/DataViz/a1-aniket.svg" alt="image"></p>
+
+<p><a href="https://dl.dropboxusercontent.com/u/23289062/siteImages/DataViz/a1-aniket.svg">SVG</a></p>
+
+<h2>Audience</h2>
+
+<p>The audience of the visualization are Doctors and Lab practitioners who need to know the Minimum Inhibitory Concentration (MIC) of the antibiotic during (not after) the process of determining the bacteria in hand.</p>
+
+<h2>Rationale</h2>
+
+<ul>
+<li>I briefly went through the procedure involved in diagnosis of bacteria. First step is Gram staining the bacteria. It’s quite fast and cheap to get Gram results as positive or negative. So, it will be beneficial if the data is visualized in two separate graphics according to Gram Stain as one wouldn’t need to go though all 16 bacteria. Moreover it tells a story, which I noticed (and would like to tell) while I was performing transformation on the data to find any patterns. It intentionally and correctly shows that Neomycin is an effective antibiotic for Gram-negative bacteria and Penicillin (in most cases) or Neomycin (for other cases) can be good choice for Gram-positive bacteria. </li>
+<li>The data is arranged from lower concentration needed to higher concentration needed. As with lower MIC I wanted to represent more powerfulness or effectiveness of the antibiotic, it made sense to arrange it in that order. For example, the graphic shows Neomycin as a powerful antibiotic for Gram-negative bacteria, showing ‘capturing’ all the space and inhibiting the bacterial growth. To show the ‘capturing’ I used spider chart instead of something else. The color of the text showing Gram strain is in purple for positive and in pink/red for negative as the color of bacteria after gram staining. This is can help is quick recognition.</li>
+<li>As the MIC data is not linear. I applied the following formula to transform the data so that it can tell the above mentioned stories and can be fitted into the space.</li>
+<li> <code>Y = -1*(-4+log(X))</code> It maps the MIC values as:<br></li>
+</ul>
+
+<p>MIC values  | Y
+-------|------
+0.001   |   7
+0.01    |   6
+0.1     |   5
+1       |   4
+10      |   3
+100     |   2
+1000    |   1</p>
+
+<p>The log(base 10) is used to linearize the data. -4 helps in having all the data on one side of the axis. Then the -1 over whole takes it to the positive domain. The mapping also made it easier for the graphic toolkit to represent using levels 1 to .</p>
+
+<ul>
+<li>I also tried using external database for shape of the bacteria to get some patterns, but couldn’t in the specified time constrain. As, Bacteria can have a Cocci or Bacilli or other shapes independent of the gram. I think using the shape data (as this is usually the next step followed in Labs after Gram staining) can be the next step in improving this visualization, and this might give it a tree-like structure that can be easy to follow. Also, due to strongly separating into two graphics the visualization makes it difficult to perceive any relation between two gram staining (if any). </li>
+</ul>
+
+			</div>
+			<div id="disqus_thread"></div>
+		    <script type="text/javascript">
+		        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+		        var disqus_shortname = 'atneik'; // required: replace example with your forum shortname
+		
+		        /* * * DON'T EDIT BELOW THIS LINE * * */
+		        (function() {
+		            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		        })();
+		    </script>
+		    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		</div>
+	</div>
+	<div class="row">
+		
+		<a href="/studio/playground/2014/01/13/UW-Q2-Studio-E1.html">
+		<div class="col-md-6 page">
+			<h2>Paper Prototyping a Coffee Shop App</h2>
+			<strong>13 Jan 2014</strong>
+			//
+			
+				On the first session of prototyping studio we design and paper prototype an App used to be used for ordering coffee at a Cafe...
+			
+		</div>
+		</a>
+		
+		
+		<a href="/project/2014/01/12/UW-Q1-RevealCare.html">
+		<div class="col-md-6 page">
+			<h2>Reveal Care</h2>
+			<strong >12 Jan 2014</strong>
+			//
+			
+				
+			
+		</div>
+		</a>
+		
+	</div>
+</div>
+
+        
+        <!-- Footer -->
+		<footer>
+			<div class="container">
+				
+				<div class="row-fluid credits">
+					<div class="span12">
+						&copy;2014 <a href="/" title="Atneik">Atneik. </a>
+					</div>
+				</div>
+				
+			</div>
+		</footer>
+		<!-- End Footer -->
+		
+		<!-- Js -->
+		<!-- Modernizr -->
+		<script src="/theme/js/modernizr.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> <!-- Bootstrap -->
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+		<script src="/theme/js/waypoints.js"></script> <!-- WayPoints -->
+		<script src="/theme/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
+		<script src="/theme/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
+		<script src="/theme/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+		<script src="/theme/js/main.js"></script> <!-- Default JS -->
+		<!-- End Js -->
+
+    </body>
+</html>

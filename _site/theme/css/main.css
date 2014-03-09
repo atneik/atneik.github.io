@@ -285,7 +285,6 @@ h3.spec {
 header {
 	width: 100%;
 	z-index: 99;
-	color: rgb(51,54,59);
 }
 
 header .sticky-nav {
@@ -322,7 +321,7 @@ header .blue{
 header #logo {
 	float: left;
 	padding: 15px 0;
-	margin-left: 20px;
+	margin-left: 2%;
 }
 
 header #logo a {
@@ -453,117 +452,19 @@ header #right li a:hover{
 
 nav#menu {
 	float: right;
-	margin-right: 20px;
+	margin-right: 2%;
+	margin-top: 10px;
 }
 
-nav#menu #menu-nav {
-	margin: 0;
-	padding: 0;	
+.nav-tabs li a {
+	margin-right: 0px;
+	line-height: inherit;
+	border: none;
+	border-radius: none;
 }
 
-nav#menu #menu-nav li {
-	list-style: none;
-	color: rgb(0,0,0);
-	display: inline-block;
-	margin-left: 50px;
-	text-transform: uppercase;
-}
-
-nav#menu #menu-nav li:first-child {
-	margin-left: 0;	
-}
-
-nav#menu #menu-nav li a {
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 60px;
-	display:block;
-	text-transform: uppercase;
-	padding-left: 15px;
-	padding-right: 15px;
-	text-decoration: none;
-	/*
-	opacity: 0.5;
-	filter: alpha(opacity=50);
-	*/
-	-webkit-transition: opacity 0.25s ease-in-out 0s;	
-	   -moz-transition: opacity 0.25s ease-in-out 0s;
-		 -o-transition: opacity 0.25s ease-in-out 0s;
-		    transition: opacity 0.25s ease-in-out 0s;	
-}
-
-
-nav#menu #menu-nav li.current a{
-	background: url(../img/br.svg) no-repeat;
-	background-position: center;
-}	
-
-nav#menu #menu-nav blue li a,
-nav#menu #menu-nav blue li.current a,
-nav#menu #menu-nav blue li a:hover{
-	color: rgb(50,54,59);
-}
-
-nav#menu #menu-nav li a:hover{
-	opacity: 0.65;
-	filter: alpha(opacity=65);
-}
-
-/*===================
-FOR BLOG
-=====================*/
-
-nav#menu #menu-nav-blog {
-	margin: 0;
-	padding: 0;	
-}
-
-nav#menu #menu-nav-blog li {
-	list-style: none;
-	color: rgb(0,0,0);
-	display: inline-block;
-	margin-left: 50px;
-	text-transform: uppercase;
-}
-
-nav#menu #menu-nav-blog li:first-child {
-	margin-left: 0;	
-}
-
-nav#menu #menu-nav-blog li a {
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 60px;
-	display:block;
-	text-transform: uppercase;
-	padding-left: 15px;
-	padding-right: 15px;
-	text-decoration: none;
-	/*
-	opacity: 0.5;
-	filter: alpha(opacity=50);
-	*/
-	-webkit-transition: opacity 0.25s ease-in-out 0s;	
-	   -moz-transition: opacity 0.25s ease-in-out 0s;
-		 -o-transition: opacity 0.25s ease-in-out 0s;
-		    transition: opacity 0.25s ease-in-out 0s;	
-}
-
-nav#menu #menu-nav-blog blue li a,
-nav#menu #menu-nav-blog blue li.current a,
-nav#menu #menu-nav-blog blue li a:hover{
-	color: rgb(50,54,59);
-}
-
-nav#menu #menu-nav-blog li a:hover{
-	opacity: 0.65;
-	filter: alpha(opacity=65);
-}
-
-article {
-
-	margin-bottom: 50px;
-	
+.nav-tabs {
+border-bottom: none;
 }
 
 /* ==================================================
