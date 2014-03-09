@@ -94,6 +94,10 @@ hr {
 	text-decoration:line-through;
 }
 
+.img-responsive {
+    margin: 0 auto;
+}
+
 input, button, select, textarea {
 	font-weight: 400;
 	outline: 0;
@@ -566,14 +570,26 @@ border-bottom: none;
 	-moz-box-shadow: 0 1px 2px #aaa;
 }
 
-.page2 {
-	padding:0;
-	margin: 0;
-	padding-top: 50px;
+.page-thumb {
 	position: relative;
-	z-index: 99;
-	background: url(../img/bgs/bg_06.png) repeat;
+	background: #fff;
+	/* margin: 5rem auto 5rem auto; */
+	/* padding: 0; */
+	height: 300px;
+	border-radius: 3px;
+	box-shadow: 0 1px 2px #aaa;
+	-webkit-box-shadow: 0 1px 2px #aaa;
+	-moz-box-shadow: 0 1px 2px #aaa;
+}
 
+.page-thumb img {
+	padding: 0;
+}
+
+.page-thumb-title {
+	position: absolute; 
+	bottom: 0;
+	background-color: #fff;
 }
 
 
@@ -728,30 +744,8 @@ border-bottom: none;
    About Section
 ================================================== */
 
-.profile-name {
-	margin-bottom: 15px;	
-}
-
-.profile-description {
-	margin-bottom: 25px;	
-}
-
-.image-wrap {
-	position: relative;
-	overflow: hidden;
-	margin-bottom: 25px;
-	cursor: pointer;
-	
-	border-color: black;
-	border-bottom: 100px;
-	
-	box-shadow: 0px 0px 8px rgb(0, 0, 0);
-	-webkit-box-shadow: 0 0 8px rgb(0, 0, 0);
-	-moz-box-shadow: 0 0 8px rgb(0, 0, 0);
-}
-
-.image-wrap img {
-	width: 100%;	
+#about {
+	text-align: center;
 }
 
 /* ==================================================
@@ -779,29 +773,6 @@ border-bottom: none;
 	margin-left: 0;
 }
 
-#social ul li a {
-	display: block;
-	width: 70px;
-	height: 70px;
-
-	
-	
-	-webkit-transition: all 400ms ease-out 0s;	
-	   -moz-transition: all 400ms ease-out 0s;
-		 -o-transition: all 400ms ease-out 0s;
-		    transition: all 400ms ease-out 0s;
-}
-
-#social ul li a span {
-	display: inline-block;
-	margin: 0;
-	color: rgb(50,54,59);
-	font-size: 32px;
-	line-height: 70px;
-	
-	opacity: 0.2;
-	filter: alpha(opacity=20);
-}
 
 #social ul li:hover a span,
 #social ul li.active a span {
