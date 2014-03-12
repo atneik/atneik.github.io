@@ -116,11 +116,11 @@ BRUSHED.contactForm = function(){
 ================================================== */
 
 BRUSHED.menu = function(){
-	$('#menu-nav, #menu-nav-mobile').onePageNav({
+	$('#menu, #menu-mobile').onePageNav({
 		currentClass: 'current',
     	changeHash: false,
     	scrollSpeed: 750,
-    	scrollOffset: 60,
+    	scrollOffset: 100,
     	scrollThreshold: 0.5,
 		easing: 'easeOutExpo',
 		filter: ':not(.external)'
@@ -226,6 +226,7 @@ BRUSHED.toolTip = function(){
 
 $(document).ready(function(){
 	
+	/*
 	// Preload the page with jPreLoader
 	$('body').jpreLoader({
 		splashID: "#jSplash",
@@ -235,6 +236,7 @@ $(document).ready(function(){
 			$('#circle').delay(250).animate({'opacity' : 1}, 500, 'linear');
 		}
 	});
+	*/
 	
 	BRUSHED.nav();
 	BRUSHED.mobileNav();
