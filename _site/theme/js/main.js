@@ -49,9 +49,6 @@ BRUSHED.nav = function(){
 	$('.sticky-nav').waypoint('sticky');
 }
 
-
-
-
 /* ==================================================
    FancyBox
 ================================================== */
@@ -80,37 +77,6 @@ BRUSHED.fancyBox = function(){
 	}
 }
 
-
-/* ==================================================
-   Contact Form
-================================================== */
-
-BRUSHED.contactForm = function(){
-	$("#contact-submit").on('click',function() {
-		$contact_form = $('#contact-form');
-		
-		var fields = $contact_form.serialize();
-		
-		$.ajax({
-			type: "POST",
-			url: "_include/php/contact.php",
-			data: fields,
-			dataType: 'json',
-			success: function(response) {
-				
-				if(response.status){
-					$('#contact-form input').val('');
-					$('#contact-form textarea').val('');
-				}
-				
-				$('#response').empty().html(response.html);
-			}
-		});
-		return false;
-	});
-}
-
-
 /* ==================================================
    Menu Highlight
 ================================================== */
@@ -126,99 +92,6 @@ BRUSHED.menu = function(){
 		filter: ':not(.external)'
 	});
 }
-
-/* ==================================================
-   Next Section
-================================================== */
-
-BRUSHED.goSection = function(){
-	$('#nextsection').on('click', function(){
-		$target = $($(this).attr('href')).offset().top-30;
-		
-		$('body, html').animate({scrollTop : $target}, 750, 'easeOutExpo');
-		return false;
-	});
-}
-
-/* ==================================================
-   Thumbs / Social Effects
-================================================== */
-
-BRUSHED.utils = function(){
-	
-	$('.item-thumbs').bind('touchstart', function(){
-		$(".active").removeClass("active");
-      	$(this).addClass('active');
-    });
-	
-	$('.image-wrap').bind('touchstart', function(){
-		$(".active").removeClass("active");
-      	$(this).addClass('active');
-    });
-	
-	$('#social ul li').bind('touchstart', function(){
-		$(".active").removeClass("active");
-      	$(this).addClass('active');
-    });
-	
-}
-
-/* ==================================================
-   Accordion
-================================================== */
-
-BRUSHED.accordion = function(){
-	var accordion_trigger = $('.accordion-heading.accordionize');
-	
-	accordion_trigger.delegate('.accordion-toggle','click', function(event){
-		if($(this).hasClass('active')){
-			$(this).removeClass('active');
-		   	$(this).addClass('inactive');
-		}
-		else{
-		  	accordion_trigger.find('.active').addClass('inactive');          
-		  	accordion_trigger.find('.active').removeClass('active');   
-		  	$(this).removeClass('inactive');
-		  	$(this).addClass('active');
-	 	}
-		event.preventDefault();
-	});
-}
-
-
-BRUSHED.randomHue = function(){
-	var randomH = Math.floor(Math.random()*270).toString();
-	document.body.style.backgroundColor = "hsl(" + randomH + ", 25%, 75%)";
-}
-
-/* ==================================================
-   Toggle
-================================================== */
-
-BRUSHED.toggle = function(){
-	var accordion_trigger_toggle = $('.accordion-heading.togglize');
-	
-	accordion_trigger_toggle.delegate('.accordion-toggle','click', function(event){
-		if($(this).hasClass('active')){
-			$(this).removeClass('active');
-		   	$(this).addClass('inactive');
-		}
-		else{
-		  	$(this).removeClass('inactive');
-		  	$(this).addClass('active');
-	 	}
-		event.preventDefault();
-	});
-}
-
-/* ==================================================
-   Tooltip
-================================================== */
-
-BRUSHED.toolTip = function(){ 
-    $('a[data-toggle=tooltip]').tooltip();
-}
-
 
 /* ==================================================
 	Init
@@ -244,12 +117,7 @@ $(document).ready(function(){
 	BRUSHED.menu();
 	BRUSHED.goSection();
 	BRUSHED.fancyBox();
-	BRUSHED.contactForm();
-	BRUSHED.utils();
-	BRUSHED.accordion();
-	BRUSHED.toggle();
-	BRUSHED.toolTip();
-	BRUSHED.showNavShadow();
+	
 	if(document.body.getElementsByTagName("header")[0].id == "post"){
 		BRUSHED.randomHue();
 	}

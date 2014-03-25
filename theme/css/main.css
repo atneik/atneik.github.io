@@ -440,16 +440,20 @@ header #right li a:hover{
 
 @media all and (max-width: 500px) and (min-width: 300px){
 	header #right li {
-
 		margin-left: 10px;
 		padding-left: 10px;
 		padding-right: 10px;
-		
 		}
 		
 	body{
 		font-size: 18px; 
 		line-height: 1.4;
+	}
+	.nav-tabs {
+		padding-top: 5px;
+	}
+	.nav>li>a {
+		padding: 10px 10px;
 	}
 }
 
@@ -465,6 +469,11 @@ nav#menu {
 	line-height: inherit;
 	border: none;
 	border-radius: none;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+background-color: #dadada;
+cursor: default;
+border: none;
 }
 
 .nav-tabs {
