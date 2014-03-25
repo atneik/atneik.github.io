@@ -259,4 +259,9 @@ $(window).resize(function(){
 	BRUSHED.mobileNav();
 });
 
+$('#pageTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+});
+
 });
