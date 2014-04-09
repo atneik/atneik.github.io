@@ -94,6 +94,29 @@ BRUSHED.menu = function(){
 }
 
 /* ==================================================
+	Nav Shadow hide/show
+================================================== */
+
+BRUSHED.showNavShadow = function(){
+
+	$(function() {
+    	$(window).scroll(function() {
+        	var top = $(document).scrollTop();
+        	var $navbar = $('div.sticky-nav.stuck');
+        	console.log(top);
+        		if (top >30) {
+        			$navbar.css({'-webkit-box-shadow': '0 3px 5px rgba(125, 125, 125, 0.9)',
+	'-moz-box-shadow': '0 3px 5px rgba(125, 125, 125, 0.9)',
+	'box-shadow': '0 3px 5px rgba(0, 0, 0, 0.4)'});  		
+        		}
+        		else{
+	        		$navbar.css({'-webkit-box-shadow':'', '-moz-box-shadow':'', 'box-shadow':''});
+        		}
+        }).triggerHandler("scroll");
+    });	
+}
+
+/* ==================================================
 	Init
 ================================================== */
 
@@ -115,12 +138,8 @@ $(document).ready(function(){
 	BRUSHED.mobileNav();
 	BRUSHED.listenerMenu();
 	BRUSHED.menu();
-	BRUSHED.goSection();
 	BRUSHED.fancyBox();
-	
-	if(document.body.getElementsByTagName("header")[0].id == "post"){
-		BRUSHED.randomHue();
-	}
+	BRUSHED.showNavShadow();
 });
 
 $(window).resize(function(){

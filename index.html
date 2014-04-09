@@ -23,7 +23,7 @@ layout: master
 	<div class="row">
 	{% for post in site.categories.project %}
 		<a href="{{ post.url }}">
-		<div class="col-sm-6 page-thumb">
+		<div class="col-sm-5 col-sm-offset-1-my page-thumb">
 			<div>
 				<img class="img-responsive" src="{{ post.imagesrc }}">
 			</div>
@@ -44,51 +44,56 @@ layout: master
 	<div class="row">
 	{% for post in site.categories.playground %}
 		<a href="{{ post.url }}">
-		<div class="col-sm-6 col-md-4 page-thumb">
+		<div class="col-sm-5 col-md-3 col-sm-offset-1-my page-thumb">
 			<div>
 				<img class="img-responsive" src="{{ post.imagesrc }}">
 			</div>
 			<div class="page-thumb-title">
-				{{ post.subtitle }}
+				<h2> {{ post.title }} <h2>
 			</div>
 		</div>
+		
 		</a>
 	{% endfor %}
 	</div>
 </div>
 
-<div id="about" class="container page">
+<div id="about" class="container">
 	<div class="row">
-		<div class="col-xs-12">
-			<h2>Aniket Handa</h2>
-		</div>
-		<div class="col-xs-12">
-			<h3>dream. design. develop</h3>
-		</div>
+		<div class="col-xs-11 col-sm-offset-1-my">
+			<div class="row page">
+				<div class="col-xs-12">
+					<h2>Aniket Handa</h2>
+				</div>
+				<div class="col-xs-12">
+					<h3>dream. design. develop</h3>
+				</div>
 
-		<div class="col-xs-12">
-			<img class="img-responsive" src="http://www.gravatar.com/avatar/afcde942cfc8ffa1867c37939ebf057e?s=300" alt="Aniket image">
-		</div>
+				<div class="col-xs-12">
+					<img class="img-responsive" src="http://www.gravatar.com/avatar/afcde942cfc8ffa1867c37939ebf057e?s=300" alt="Aniket image">
+				</div>
 
-		<div class="col-xs-12">
-                <p>Hi! I am working towards creating new experiences using technology. As a software developer I give some special treatment to Image processing, Computer Vision and Mobile Apps. I enjoy developing, dreaming and photography. <br/> Find more interesting stuff at <a href= "posts.html">my blog</a></p>
-        </div>
+				<div class="col-xs-12">
+		                <p>Hi! I am working towards creating new experiences using technology. As a software developer I give some special treatment to Image processing, Computer Vision and Mobile Apps. I enjoy developing, dreaming and photography. <br/> Find more interesting stuff at <a href= "posts.html">my blog</a></p>
+		        </div>
 
-		<div class="col-xs-12">
-			<h3>aniket <i class="font-icon-social-email" style="font-size: 18px"></i> uw.edu</h3>
-		</div>
-				
-		<div class="col-xs-12">
-			<div id="social-area">
-				<nav id="social">
-	                    <ul>
-	                        <li><a href="http://twitter.com/atneik" title="Follow Me on Twitter" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
-	                        <li><a href="http://www.facebook.com/atneik" title="Follow Me on Facebook" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
-	                        <li><a href="http://www.linkedin.com/in/atneik" title="Follow Me on LinkedIn" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
-	                        <li><a href="http://www.github.com/atneik" title="Fork me on Github" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
-	                        <li><a href="posts.html" title="Follow my Blog" target="_blank"><i class="fa fa-book fa-2x"></i></a></li>
-	                    </ul>
-	            </nav>
+				<div class="col-xs-12">
+					<h3>aniket <i class="font-icon-social-email" style="font-size: 18px"></i> uw.edu</h3>
+				</div>
+						
+				<div class="col-xs-12">
+					<div id="social-area">
+						<nav id="social">
+			                    <ul>
+			                        <li><a href="http://twitter.com/atneik" title="Follow Me on Twitter" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+			                        <li><a href="http://www.facebook.com/atneik" title="Follow Me on Facebook" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+			                        <li><a href="http://www.linkedin.com/in/atneik" title="Follow Me on LinkedIn" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+			                        <li><a href="http://www.github.com/atneik" title="Fork me on Github" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+			                        <li><a href="posts.html" title="Follow my Blog" target="_blank"><i class="fa fa-book fa-2x"></i></a></li>
+			                    </ul>
+			            </nav>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

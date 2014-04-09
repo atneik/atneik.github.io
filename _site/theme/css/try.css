@@ -1,4 +1,7 @@
 /* ==================================================
+   Mixins
+================================================== */
+/* ==================================================
    Color Defaults
 ================================================== */
 /*$color-base: #FFFFFF;*/
@@ -54,6 +57,10 @@ hr {
 
 .img-responsive {
   margin: 0 auto; }
+
+.col-sm-offset-1-my {
+  margin-left: 2.08333325%;
+  margin-right: 2.08333325%; }
 
 /* ==================================================
    Typography
@@ -117,7 +124,7 @@ header .sticky-nav.stuck {
   z-index: 1001;
   -webkit-transition: box-shadow 0.25s ease-in-out 0;
   -moz-transition: box-shadow 0.25s ease-in-out 0;
-  -o-transition: box-shadow 0.25s ease-in-out 0s;
+  -o-transition: box-shadow 0.25s ease-in-out 0;
   transition: box-shadow 0.25s ease-in-out 0; }
 
 header .blue {
@@ -280,9 +287,9 @@ nav#menu {
   color: black; }
 
 #navigation-mobile li:last-child {
+  box-shadow: 0 3px 5px rgba(125, 125, 125, 0.9);
   -webkit-box-shadow: 0 3px 5px rgba(125, 125, 125, 0.9);
-  -moz-box-shadow: 0 3px 5px rgba(125, 125, 125, 0.9);
-  box-shadow: 0 3px 5px rgba(125, 125, 125, 0.9); }
+  -moz-box-shadow: 0 3px 5px rgba(125, 125, 125, 0.9); }
 
 #navigation-mobile li a {
   display: block;
@@ -294,34 +301,35 @@ nav#menu {
 ================================================== */
 .page {
   position: relative;
-  margin: 5rem auto 5rem auto;
-  max-width: 750px;
+  margin: 5rem 0 5rem 0;
+  max-width: 91%;
   padding: 5rem 5% 5rem 5%;
   border-radius: 3px;
   background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 1px 2px #aaa;
-  -webkit-box-shadow: 0 1px 2px #aaa;
-  -moz-box-shadow: 0 1px 2px #aaa; }
+  box-shadow: 0 1px 2px #aaaaaa;
+  -webkit-box-shadow: 0 1px 2px #aaaaaa;
+  -moz-box-shadow: 0 1px 2px #aaaaaa; }
 
 .page-thumb {
   position: relative;
-  background: #1B170F;
+  background-color: rgba(255, 255, 255, 0.8);
   margin-top: 1em;
   padding: 0;
   height: 300px;
   border-radius: 3px;
-  box-shadow: 0 1px 2px #aaa;
   overflow: hidden;
-  -webkit-box-shadow: 0 1px 2px #aaa;
-  -moz-box-shadow: 0 1px 2px #aaa; }
+  box-shadow: 0 1px 2px #aaaaaa;
+  -webkit-box-shadow: 0 1px 2px #aaaaaa;
+  -moz-box-shadow: 0 1px 2px #aaaaaa; }
 
 .page-thumb img {
   padding: 0; }
 
 .page-thumb-title {
   position: absolute;
+  top: 0;
   bottom: 0;
-  background: #1B170F;
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 0.5em;
   width: 100%;
   /*
@@ -329,6 +337,12 @@ nav#menu {
   	-webkit-linear-gradient(bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
   	-moz-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
   	*/ }
+
+.page-thumb-subtitle {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0.5em;
+  width: 100%; }
 
 .page-alternate {
   background: gray;

@@ -1,3 +1,18 @@
+
+/* ==================================================
+   Mixins
+================================================== */
+@mixin box-shadow-mix($val) {
+	box-shadow: $val;
+	-webkit-box-shadow: $val;
+	-moz-box-shadow: $val;
+}
+@mixin transition-mix ($val) {
+	-webkit-transition: $val;
+    -moz-transition: $val;
+    -o-transition: $val;
+    transition: $val;
+}
 /* ==================================================
    Color Defaults
 ================================================== */
@@ -92,6 +107,11 @@ hr {
     margin: 0 auto;
 }
 
+.col-sm-offset-1-my {
+	margin-left: 2.08333325%;
+	margin-right: 2.08333325%;
+}
+
 /* ==================================================
    Typography
 ================================================== */
@@ -166,10 +186,7 @@ header .sticky-nav.stuck {
 	top: 0;
 	left: 0;
 	z-index: 1001;
-	-webkit-transition: box-shadow 0.25s ease-in-out 0;
-    -moz-transition: box-shadow 0.25s ease-in-out 0;
-    -o-transition: box-shadow 0.25s ease-in-out 0s;
-    transition: box-shadow 0.25s ease-in-out 0;
+	@include transition-mix(box-shadow 0.25s ease-in-out 0);
 }
 
 header .blue{
@@ -382,11 +399,7 @@ border-bottom: none;
 }
 
 #navigation-mobile li:last-child {
-
-	-webkit-box-shadow: 0 3px 5px rgba(125, 125, 125, 0.9);
-	-moz-box-shadow: 0 3px 5px rgba(125, 125, 125, 0.9);
-	box-shadow: 0 3px 5px rgba(125, 125, 125, 0.9);
-	
+	@include box-shadow-mix(0 3px 5px rgba(125, 125, 125, 0.9));
 }
 
 #navigation-mobile li a{
@@ -403,28 +416,25 @@ border-bottom: none;
 
 .page {
 	position: relative;
-	margin: 5rem auto 5rem auto;
-	max-width: 750px;
+	margin: 5rem 0 5rem 0;
+	max-width: 91%;
 	padding: 5rem 5% 5rem 5%;
 	border-radius:3px;
 	background-color: rgba(255, 255, 255, 0.8);
 
-	box-shadow:0 1px 2px #aaa;
-	-webkit-box-shadow: 0 1px 2px #aaa;
-	-moz-box-shadow: 0 1px 2px #aaa;
+	@include box-shadow-mix(0 1px 2px #aaaaaa);
 }
 
 .page-thumb {
 	position: relative;
-	background: #1B170F;
+	background-color: rgba(255, 255, 255, 0.8);
 	margin-top: 1em;
 	padding: 0;
 	height: 300px;
 	border-radius: 3px;
-	box-shadow: 0 1px 2px #aaa;
 	overflow: hidden;
-	-webkit-box-shadow: 0 1px 2px #aaa;
-	-moz-box-shadow: 0 1px 2px #aaa;
+	
+	@include box-shadow-mix(0 1px 2px #aaaaaa);
 }
 
 .page-thumb img {
@@ -433,8 +443,9 @@ border-bottom: none;
 
 .page-thumb-title {
 	position: absolute; 
+	top: 0;
 	bottom: 0;
-	background: #1B170F;
+	background-color: rgba(255, 255, 255, 0.8);
 	padding: 0.5em;
 	width: 100%;
 	/*
@@ -442,6 +453,13 @@ border-bottom: none;
 		-webkit-linear-gradient(bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
 		-moz-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 		*/
+}
+
+.page-thumb-subtitle {
+	position: relative; 
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 0.5em;
+	width: 100%;
 }
 
 
