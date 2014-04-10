@@ -133,7 +133,8 @@ $(document).ready(function(){
 		}
 	});
 	
-	
+	$('body').scrollspy({ target: '#menu' });
+
 	BRUSHED.nav();
 	BRUSHED.mobileNav();
 	BRUSHED.listenerMenu();

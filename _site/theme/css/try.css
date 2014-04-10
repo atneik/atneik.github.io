@@ -223,14 +223,9 @@ nav#menu {
   border: none;
   border-radius: none; }
 
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-  background-color: #1B170F;
-  cursor: default;
-  border: none; }
-
-.nav-tabs > li > a:hover {
-  background-color: #1B170F;
-  cursor: pointer;
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus, .nav-tabs > li > a:hover {
+  background-color: #dcd6c0;
+  color: #ca6028;
   border: none; }
 
 .nav-tabs {
@@ -301,8 +296,8 @@ nav#menu {
 ================================================== */
 .page {
   position: relative;
-  margin: 5rem 0 5rem 0;
-  max-width: 91%;
+  margin: 5rem auto 5rem auto;
+  max-width: 750px;
   padding: 5rem 5% 5rem 5%;
   border-radius: 3px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -329,7 +324,7 @@ nav#menu {
   position: absolute;
   top: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.65);
   padding: 0.5em;
   width: 100%;
   /*
@@ -466,7 +461,27 @@ nav#menu {
    About Section
 ================================================== */
 #about {
-  text-align: center; }
+  width: 100%;
+  padding-top: 50px;
+  margin-top: 50px;
+  height: auto;
+  text-align: center;
+  z-index: 99;
+  background: #1B170F;
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px -5px 0px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0px -5px 0px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px -5px 0px rgba(0, 0, 0, 0.7); }
+
+#about a {
+  color: rgba(255, 255, 255, 0.5); }
+  #about a:hover, #about a:active, #about a:focus {
+    color: rgba(255, 255, 255, 0.5); }
+
+#about img {
+  max-width: 300px;
+  margin-bottom: 5%;
+  border: 5px solid; }
 
 /* ==================================================
    Social Area
@@ -508,13 +523,15 @@ footer {
   text-align: center;
   z-index: 99;
   background: #1B170F;
-  -webkit-box-shadow: 0px -5px 0px #646464;
-  -moz-box-shadow: 0 -5px 0px #646464;
-  box-shadow: 0 -5px 0px #646464; }
+  color: rgba(255, 255, 255, 0.3); }
+
+footer a {
+  color: rgba(255, 255, 255, 0.5); }
+  footer a:hover, footer a:active, footer a:focus {
+    color: rgba(255, 255, 255, 0.5); }
 
 footer .credits,
 footer .credits a {
-  color: gray;
   font-size: 13px;
   margin-bottom: 0;
   padding: 10px 0;
