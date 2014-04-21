@@ -12,6 +12,7 @@ summary: ""
 ---
 ##3D gesture interaction: technologies, platforms, applications, research
 
+
 ####What is the conventional wisdom or “state of the art” of this domain?
 
 1. Research
