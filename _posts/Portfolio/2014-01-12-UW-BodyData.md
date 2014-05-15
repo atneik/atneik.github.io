@@ -1,12 +1,12 @@
 ---
 title: "Body Data"
 subtitle: "Can constantly tracking certain body signals provide value in long run?"
-layout: post
+layout: post-project
 date: 2014-1-12 10:20
 categories: project
 tags:
 author: Aniket Handa
-imagesrc: "https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/BodyData/body.jpg"
+imagesrc: "/theme/img/icons/icon-mask.png"
 summary: ""
 ---
 

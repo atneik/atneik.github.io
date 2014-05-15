@@ -307,7 +307,7 @@ nav#menu {
 
 .page-thumb {
   position: relative;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #1B170F;
   margin-top: 1em;
   padding: 0;
   height: 300px;
@@ -318,13 +318,13 @@ nav#menu {
   -moz-box-shadow: 0 1px 2px #aaaaaa; }
 
 .page-thumb img {
-  padding: 0; }
+  padding: 120px; }
 
 .page-thumb-title {
   position: absolute;
   top: 0;
-  bottom: 0;
-  background-color: rgba(255, 255, 255, 0.65);
+  background-color: rgba(27, 23, 15, 0.8);
+  /* adding trans to #1B170F*/
   padding: 0.5em;
   width: 100%;
   /*

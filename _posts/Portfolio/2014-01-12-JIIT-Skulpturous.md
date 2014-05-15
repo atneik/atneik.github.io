@@ -1,12 +1,12 @@
 ---
 title: "Skulpturous"
 subtitle: "In this upcoming 3D revolution, can we bring 3D content creation to masses?"
-layout: post
+layout: post-project
 date: 2014-1-12 10:20
 categories: project
 tags:
 author: Aniket Handa
-imagesrc: "https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/BodyData/logo-sk.png"
+imagesrc: "/theme/img/icons/icon-kinect2.png"
 summary: ""
 ---
 

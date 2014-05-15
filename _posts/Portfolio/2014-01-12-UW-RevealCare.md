@@ -1,12 +1,12 @@
 ---
 title: "Reveal Care"
 subtitle: "Can transparency in health care help us make wise medical decisions?"
-layout: post
+layout: post-project
 date: 2014-1-12 10:20
 categories: project
 tags:
 author: Aniket Handa
-imagesrc: "https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/BodyData/revealcare.png"
+imagesrc: "/theme/img/icons/icon-care.png"
 summary: ""
 ---
 
