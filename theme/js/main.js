@@ -9,7 +9,7 @@ var mobileMenuClone = $('#menu').clone().attr('id', 'navigation-mobile');
 
 BRUSHED.mobileNav = function(){
 	var windowWidth = $(window).width();
-	
+	var flag = 2;
 	if( windowWidth <= 979 ) {
 		if( $('#mobile-nav').length > 0 ) {
 			mobileMenuClone.insertAfter('#menu');
@@ -21,6 +21,18 @@ BRUSHED.mobileNav = function(){
 			$('#mobile-nav').removeClass('open');	
 		}
 	}
+	/*
+	if( windowWidth <= 767 && flag != 1){
+		$('#work .page-thumb-title').removeClass('page-thumb-title').addClass('page-play-thumb-title');
+		$('#work .page-thumb-subtitle').removeClass('page-thumb-subtitle').addClass('page-play-thumb-subtitle');
+		flag = 1;
+	}else if(flag != 0){
+		$('#work .page-play-thumb-title').removeClass('page-play-thumb-title').addClass('page-thumb-title');
+		$('#work .page-play-thumb-subtitle').removeClass('page-play-thumb-subtitle').addClass('page-thumb-subtitle');
+		flag = 0;
+	}
+	*/
+
 }
 
 BRUSHED.listenerMenu = function(){
