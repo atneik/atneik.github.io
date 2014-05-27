@@ -44,7 +44,7 @@ $text-color: rgba(255, 255, 255, 0.5);
 $text-color-high: rgba(255, 255, 255, 0.8);
 */
 $font-weight: 300;
-$font-size: 20px;
+$font-size: 16px;
 $letter-spacing: .01rem;
 $line-height: 1.5em;
 
@@ -420,10 +420,7 @@ border-bottom: none;
 
 .page-thumb {
 	position: relative;
-	background-color: #1B170F;
 	margin-top: 1em;
-	padding: 0;
-	height: 300px;
 	border-radius: 3px;
 	overflow: hidden;
 	
@@ -431,13 +428,13 @@ border-bottom: none;
 }
 
 .page-thumb img {
-	padding: 120px;
+	padding: 10px;
 }
 
 .page-thumb-title {
-	position: absolute; 
+	/*
 	top: 0;
-	background-color: rgba(27, 23, 15, 0.8); /* adding trans to #1B170F*/
+	background-color: rgba(27, 23, 15, 0.8);  adding trans to #1B170F
 	padding: 0.5em;
 	width: 100%;
 	/*
@@ -448,11 +445,39 @@ border-bottom: none;
 }
 
 .page-thumb-subtitle {
+	/*
 	position: relative; 
-	background-color: rgba(255, 255, 255, 0.8);
 	padding: 0.5em;
 	width: 100%;
+	*/
 }
+
+/*for Playground */
+.page-play-thumb {
+	position: relative;
+	margin-top: 1em;
+	padding: 0;
+	height: 300px;
+	border-radius: 3px;
+	overflow: hidden;
+	
+	@include box-shadow-mix(0 1px 2px #aaaaaa);
+}
+
+.page-play-thumb img {
+	padding: 0px;
+}
+
+.page-play-thumb-title {
+	position: absolute; 
+	padding: 0.5em;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(27, 23, 15, 0.9);
+	width: 100%;
+}
+
+/**/
 
 
 .page-alternate {
