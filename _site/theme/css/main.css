@@ -62,13 +62,16 @@ hr {
   margin-left: 2.08333325%;
   margin-right: 2.08333325%; }
 
+.container {
+  padding-bottom: 50px; }
+
 /* ==================================================
    Typography
 ================================================== */
 h1 {
   text-align: center;
   font-family: "Roboto Condensed", sans-serif;
-  margin: 0 0 20px 0;
+  margin: 20px 0 20px 0;
   font-weight: 300; }
 
 h2,
@@ -76,31 +79,31 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 20px 0;
+  margin: 20px 0 20px 0;
   font-weight: 300;
   line-height: 1.5em; }
 
 h1 {
-  font-size: 48px;
+  font-size: 2.5em;
   color: #5e475b; }
 
 h2 {
-  font-size: 36px;
+  font-size: 2em;
   color: #913c4a; }
 
 h3 {
-  font-size: 24px;
+  font-size: 1.5em;
   color: #a04127; }
 
 h4 {
-  font-size: 20px;
+  font-size: 1.3em;
   color: #ca6028; }
 
 h5 {
-  font-size: 18px; }
+  font-size: 1em; }
 
 h6 {
-  font-size: 16px; }
+  font-size: 1em; }
 
 /* ==================================================
    Header
@@ -314,6 +317,42 @@ nav#menu {
   -webkit-box-shadow: 0 1px 2px #aaaaaa;
   -moz-box-shadow: 0 1px 2px #aaaaaa; }
 
+.row a:nth-child(1) .page-thumb > .row > div:first-child {
+  background: -moz-linear-gradient(top, #c85230 0%, #a04127 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c85230), color-stop(100%, #a04127));
+  background: -webkit-linear-gradient(top, #c85230 0%, #a04127 100%);
+  background: -o-linear-gradient(top, #c85230 0%, #a04127 100%);
+  background: -ms-linear-gradient(top, #c85230 0%, #a04127 100%);
+  background: linear-gradient(to bottom, #c85230 0%, #a04127 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#581f9e', endColorstr='#007db9e8',GradientType=0 ); }
+
+.row a:nth-child(2) .page-thumb > .row > div:first-child {
+  background: -moz-linear-gradient(top, #a04127 0%, #bc4853 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a04127), color-stop(100%, #bc4853));
+  background: -webkit-linear-gradient(top, #a04127 0%, #bc4853 100%);
+  background: -o-linear-gradient(top, #a04127 0%, #bc4853 100%);
+  background: -ms-linear-gradient(top, #a04127 0%, #bc4853 100%);
+  background: linear-gradient(to bottom, #a04127 0%, #bc4853 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#581f9e', endColorstr='#007db9e8',GradientType=0 ); }
+
+.row a:nth-child(3) .page-thumb > .row > div:first-child {
+  background: -moz-linear-gradient(top, #bc4853 0%, #913c4a 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bc4853), color-stop(100%, #913c4a));
+  background: -webkit-linear-gradient(top, #bc4853 0%, #913c4a 100%);
+  background: -o-linear-gradient(top, #bc4853 0%, #913c4a 100%);
+  background: -ms-linear-gradient(top, #bc4853 0%, #913c4a 100%);
+  background: linear-gradient(to bottom, #bc4853 0%, #913c4a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#581f9e', endColorstr='#007db9e8',GradientType=0 ); }
+
+.row a:nth-child(4) .page-thumb > .row > div:first-child {
+  background: -moz-linear-gradient(top, #913c4a 0%, #894666 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #913c4a), color-stop(100%, #894666));
+  background: -webkit-linear-gradient(top, #913c4a 0%, #894666 100%);
+  background: -o-linear-gradient(top, #913c4a 0%, #894666 100%);
+  background: -ms-linear-gradient(top, #913c4a 0%, #894666 100%);
+  background: linear-gradient(to bottom, #913c4a 0%, #894666 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#581f9e', endColorstr='#007db9e8',GradientType=0 ); }
+
 .page-thumb img {
   padding: 10px; }
 
@@ -483,8 +522,6 @@ nav#menu {
 ================================================== */
 #about {
   width: 100%;
-  padding-top: 50px;
-  margin-top: 50px;
   height: auto;
   text-align: center;
   z-index: 99;
