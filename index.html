@@ -2,7 +2,7 @@
 layout: master
 ---
 <!-- Header -->
-		<header>
+		<header id="indexHeader">
 		    <div class="sticky-nav">
 		    	<a href="/">
 			    	<div id="logo">
@@ -10,16 +10,63 @@ layout: master
 		        </a>
 		        <nav id="menu">
 				    <ul class="nav nav-tabs" id="pageTab">
-						  <li class="active"><a href="#work">Work</a></li>
-						  
+				    		<li class="active"><a href="#about">About</a></li>
+						  <li><a href="#work">Work</a></li>
 						  <li><a href="#playground">Proto</a></li>
-
-						  <li><a href="#about">About</a></li>
 					</ul>
 		        </nav>
 			</div>
 		</header>
 <!-- End Header -->
+
+<div id="about">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-xs-12">
+				<h2 style="font-size: 2.5em">Aniket Handa</h2>
+			</div>
+
+			<div class ="col-sm-6" >	
+				<div class="col-xs-12 ">
+						<img class="img-responsive" src="https://dl.dropboxusercontent.com/u/23289062/aniket.jpg" alt="Aniket image">
+				</div>
+				
+			</div>
+			
+			<div class= "col-sm-6">
+
+				<div class="col-xs-12">
+					<h3>dream. design. develop</h3>
+				</div>
+					
+					<div class="col-xs-12">
+					<p>Hi! I am currently a graduate student in <a href="http://mhcid.uw.edu"> Human-Computer Interaction + Design (MHCID) </a> at <a href="http://uw.edu"> University of Washington, Seattle</a>. I already hold a dual Master and Bachelor degrees in Computer Science & Engineering from <a href="http://www.jiit.ac.in/"> Jaypee Institute of Information Technology, Noida</a>. My interests lies around HCI, Wearables, UbiComp, Ambient Technology, Computer Vision, and Data Visualization. 
+
+					<br/> <br/> Find all my posts<a href= "posts.html"> here.</a></p>
+				</div>
+
+			</div>
+				<div class="col-xs-12">
+					<h3>aniket <i class="font-icon-social-email" style="font-size: 18px"></i> uw.edu</h3>
+				</div>
+				<div class="col-xs-12">
+					<div id="social-area">
+						<nav id="social">
+							<ul>
+								<li><a href="http://twitter.com/atneik" title="Follow Me on Twitter" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+								<li><a href="http://www.facebook.com/atneik" title="Follow Me on Facebook" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+								<li><a href="http://www.linkedin.com/in/atneik" title="Follow Me on LinkedIn" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+								<li><a href="http://www.github.com/atneik" title="Fork me on Github" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+								<li><a href="posts.html" title="Follow my Blog" target="_blank"><i class="fa fa-book fa-2x"></i></a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
 <div class="container">
 	<br/> <br/>	
 </div>
@@ -69,55 +116,13 @@ layout: master
 				<img class="img-responsive" src="{{ post.imagesrc }}">
 			</div>
 			<div class="page-play-thumb-title">
-				<h2> {{ post.title }} <h2>
+				<h3> {{ post.title }} <h3>
 			</div>
 		</div>
 		
 		</a>
 	{% endfor %}
 	<br/> <br/> <br/>
-	</div>
-</div>
-
-<div id="about">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12">
-				<h2>Aniket Handa</h2>
-			</div>
-
-			<div class="col-xs-12">
-					<img class="img-responsive" src="https://dl.dropboxusercontent.com/u/23289062/aniket.jpg" alt="Aniket image">
-			</div>
-
-			<div class="col-xs-12">
-				<h3>dream. design. develop</h3>
-			</div>
-
-			<div class="col-xs-12">
-				<p>Hi! I am currently a graduate student in <a href="http://mhcid.uw.edu"> Human-Computer Interaction + Design (MHCID) </a> at <a href="http://uw.edu"> University of Washington, Seattle</a>. I already hold a dual Master and Bachelor degrees in Computer Science & Engineering from <a href="http://www.jiit.ac.in/"> Jaypee Institute of Information Technology, Noida</a>. My interests lies around HCI, Wearables, UbiComp, Ambient Technology, Computer Vision, and Data Visualization. 
-
-				<br/> <br/> Find all my posts<a href= "posts.html"> here.</a></p>
-			</div>
-
-			<div class="col-xs-12">
-				<h3>aniket <i class="font-icon-social-email" style="font-size: 18px"></i> uw.edu</h3>
-			</div>
-
-			<div class="col-xs-12">
-				<div id="social-area">
-					<nav id="social">
-						<ul>
-							<li><a href="http://twitter.com/atneik" title="Follow Me on Twitter" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
-							<li><a href="http://www.facebook.com/atneik" title="Follow Me on Facebook" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
-							<li><a href="http://www.linkedin.com/in/atneik" title="Follow Me on LinkedIn" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
-							<li><a href="http://www.github.com/atneik" title="Fork me on Github" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
-							<li><a href="posts.html" title="Follow my Blog" target="_blank"><i class="fa fa-book fa-2x"></i></a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</div>
 	</div>
 </div>
 
