@@ -12,7 +12,6 @@ summary: ""
 ---
 As technology becomes more ambient and hides itself in the environment, it is becoming more obvious that the next paradigm of user interface could be a based on natural 3D gestures. Industry is bringing the technology to the devices such as tablets and smartphones [[1]](http://www.theverge.com/2014/1/6/5281120/kinect-like-cameras-are-coming-to-your-next-laptop-or-tablet), whereas research is being done to integrate the technology with wearable devices [[2]](http://dl.acm.org/citation.cfm?id=2502042). Devices such as smart watches deal with limited display to touch and also head mounted displays (like Google glass) deal with awkward interaction techniques, can be a good candidate for using 3D gestures as input. HCI can play a major role in defining interactions to provide all together new experience to the user. It can also explore new domains wherein this technology can be used by carefully considering the value provided by it as compared to existing solutions.
 
-* [Secondary Research](/RS/post1.html)
-* [Research & Interview prep](/RS/post2.html)
+[Check out the progress here](http://dynabots.com)
 
 			
