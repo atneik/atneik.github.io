@@ -1,11 +1,15 @@
 ---
 title: "3D Interface - In progress"
-subtitle: "Now with Depth camera, your primary device will be better at sensing its surroundings. Can we create a more immersive content consumption medium using this technology?"
+subtitle: "Now with upcoming Depth camera in mobile phone and tablets, our primary device will be better at sensing its surroundings. Can we create a more immersive content consumption medium using this technology?"
 layout: post-project
-date: 2014-04-20 10:20
+date: 2014-04-28 10:20
 categories: project
 tags:
+ - Intel RealSense Technology
+ - 3D gestures
+ - Publication Industry
 author: Aniket Handa
+size: 2
 permalink: /RS.html
 imagesrc: "/theme/img/icons/icon-3d.png"
 summary: ""

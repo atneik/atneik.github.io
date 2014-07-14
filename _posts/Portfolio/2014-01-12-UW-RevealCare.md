@@ -5,7 +5,12 @@ layout: post-project
 date: 2014-1-12 10:20
 categories: project
 tags:
+ - User Centered Design
+ - UI Prototype 
+ - AWS 
+ - Mobile
 author: Aniket Handa
+size: 1
 imagesrc: "/theme/img/icons/icon-care2.png"
 summary: ""
 ---
