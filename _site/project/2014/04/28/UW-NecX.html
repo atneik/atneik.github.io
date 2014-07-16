@@ -6,7 +6,7 @@
 <!--[if gt IE 8]><!-->
 <html  lang="en-US">
 	<head>
-    	<title>Visualizing Burtin's Antibiotic Dataset</title>
+    	<title>NecX</title>
         
         <!-- Meta Tags -->
         <meta charset="utf-8">
@@ -96,10 +96,10 @@
         <ul id="rightList">
         	<li><a href="/"> <i class="fa fa-list-ul"></i></i></i></a></li>
         	
-        		<li id = "rightNext"><a href="/project/2014/01/12/UW-RevealCare.html"><i class="fa fa-chevron-left"></i></a></li>      
+        		<li id = "rightNext"><a href="/RS.html"><i class="fa fa-chevron-left"></i></a></li>      
         	
         	
-        		<li id = "rightPrev"><a href="/course/playground/2014/01/12/UW-BodyData.html"><i class="fa fa-chevron-right"></i></a></li>
+        		<li id = "rightPrev"><a href="/project/2014/04/27/UW-FBHack.html"><i class="fa fa-chevron-right"></i></a></li>
         	
         </ul>
         </div>       
@@ -110,45 +110,11 @@
 <div class="container">
 	<div class="row">
 		<div class="page">
-			<h1>Visualizing Burtin's Antibiotic Dataset</h1>
+			<h1>NecX</h1>
 			<p class="meta" style="text-align: center">
-				12 Jan 2014
 			</p>
 			<div class="post">
-				<p>This Quarter I&#39;m taking CSE512: Data Visualization class by <a href="http://homes.cs.washington.edu/%7Ejheer/">Jeff Heer</a>. The <a href="http://courses.cs.washington.edu/courses/cse512/14wi/a1.html">first assignment</a> required us to design a visualization for the Burtin&#39;s Antibiotic dataset. This is what I came up with: </p>
-
-<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/DataViz/a1-aniket.svg" alt="image"></p>
-
-<p><a href="https://dl.dropboxusercontent.com/u/23289062/siteImages/DataViz/a1-aniket.svg">SVG</a></p>
-
-<h2>Audience</h2>
-
-<p>The audience of the visualization are Doctors and Lab practitioners who need to know the Minimum Inhibitory Concentration (MIC) of the antibiotic during (not after) the process of determining the bacteria in hand.</p>
-
-<h2>Rationale</h2>
-
-<ul>
-<li>I briefly went through the procedure involved in diagnosis of bacteria. First step is Gram staining the bacteria. It’s quite fast and cheap to get Gram results as positive or negative. So, it will be beneficial if the data is visualized in two separate graphics according to Gram Stain as one wouldn’t need to go though all 16 bacteria. Moreover it tells a story, which I noticed (and would like to tell) while I was performing transformation on the data to find any patterns. It intentionally and correctly shows that Neomycin is an effective antibiotic for Gram-negative bacteria and Penicillin (in most cases) or Neomycin (for other cases) can be good choice for Gram-positive bacteria. </li>
-<li>The data is arranged from lower concentration needed to higher concentration needed. As with lower MIC I wanted to represent more powerfulness or effectiveness of the antibiotic, it made sense to arrange it in that order. For example, the graphic shows Neomycin as a powerful antibiotic for Gram-negative bacteria, showing ‘capturing’ all the space and inhibiting the bacterial growth. To show the ‘capturing’ I used spider chart instead of something else. The color of the text showing Gram strain is in purple for positive and in pink/red for negative as the color of bacteria after gram staining. This is can help is quick recognition.</li>
-<li>As the MIC data is not linear. I applied the following formula to transform the data so that it can tell the above mentioned stories and can be fitted into the space.</li>
-<li> <code>Y = -1*(-4+log(X))</code> It maps the MIC values as:<br></li>
-</ul>
-
-<p>MIC values  | Y
--------|------
-0.001   |   7
-0.01    |   6
-0.1     |   5
-1       |   4
-10      |   3
-100     |   2
-1000    |   1</p>
-
-<p>The log(base 10) is used to linearize the data. -4 helps in having all the data on one side of the axis. Then the -1 over whole takes it to the positive domain. The mapping also made it easier for the graphic toolkit to represent using levels 1 to .</p>
-
-<ul>
-<li>I also tried using external database for shape of the bacteria to get some patterns, but couldn’t in the specified time constrain. As, Bacteria can have a Cocci or Bacilli or other shapes independent of the gram. I think using the shape data (as this is usually the next step followed in Labs after Gram staining) can be the next step in improving this visualization, and this might give it a tree-like structure that can be easy to follow. Also, due to strongly separating into two graphics the visualization makes it difficult to perceive any relation between two gram staining (if any). </li>
-</ul>
+				<p>coming up..</p>
 
 			</div>
 			<div id="disqus_thread"></div>
@@ -168,10 +134,10 @@
 	</div>
 	<div class="row">
 		
-		<a href="/project/2014/01/12/UW-RevealCare.html">
+		<a href="/RS.html">
 		<div class="col-md-6 page">
-			<h2>Reveal Care</h2>
-			<strong>12 Jan 2014</strong>
+			<h2>3D Interface - In progress</h2>
+			<strong>29 Apr 2014</strong>
 			//
 			
 				
@@ -180,10 +146,10 @@
 		</a>
 		
 		
-		<a href="/course/playground/2014/01/12/UW-BodyData.html">
+		<a href="/project/2014/04/27/UW-FBHack.html">
 		<div class="col-md-6 page">
-			<h2>Body Data</h2>
-			<strong >12 Jan 2014</strong>
+			<h2>Facebook Hackathon</h2>
+			<strong >27 Apr 2014</strong>
 			//
 			
 				

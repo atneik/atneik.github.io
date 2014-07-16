@@ -4,8 +4,9 @@ subtitle: "In this upcoming 3D revolution, can we bring 3D content creation to m
 layout: post-project
 date: 2014-1-12 10:20
 categories: project
-tags:
+tags: Kinect 3D Java OpenNI
 author: Aniket Handa
+size: 2
 imagesrc: "/theme/img/icons/icon-kinect2.png"
 summary: ""
 ---
