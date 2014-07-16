@@ -2,7 +2,7 @@
 title: "3D Interface - In progress"
 subtitle: "Now with upcoming Depth camera in mobile phone and tablets, our primary device will be better at sensing its surroundings. Can we create a more immersive content consumption medium using this technology?"
 layout: post-project
-date: 2014-04-28 10:20
+date: 2014-04-29 10:20
 categories: project
 tags:
  - Intel RealSense Technology
