@@ -9,7 +9,7 @@ tags:
  - 3D gestures
  - Publication Industry
 author: Aniket Handa
-size: 2
+size: 1
 permalink: /RS.html
 imagesrc: "/theme/img/icons/icon-3d.png"
 summary: ""

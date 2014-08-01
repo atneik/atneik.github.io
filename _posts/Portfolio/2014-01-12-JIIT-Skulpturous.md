@@ -6,7 +6,7 @@ date: 2014-1-12 10:20
 categories: project
 tags: Kinect 3D Java OpenNI
 author: Aniket Handa
-size: 2
+size: 1
 imagesrc: "/theme/img/icons/icon-kinect2.png"
 summary: ""
 ---
