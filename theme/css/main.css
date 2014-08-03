@@ -17,7 +17,7 @@ $text-color-high: rgba(255, 255, 255, 0.8);
    Basic Styles
 ================================================== */
 body {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.8);
   font-weight: 300;
   font-size: 16px;
   letter-spacing: 0.01rem;
@@ -309,6 +309,7 @@ nav#menu {
   border-style: solid;
   border-width: 5px;
   border-color: #dcd6c0;
+  background-color: rgba(255, 255, 255, 0.8);
   /*@include box-shadow-mix(0 1px 2px #aaaaaa);*/ }
 
 /*
@@ -371,14 +372,14 @@ nav#menu {
 
 .page-play-thumb-title {
   position: absolute;
-  padding: 0.5em;
+  padding: 1em;
   top: 0;
   bottom: 0;
-  background-color: rgba(27, 23, 15, 0.9);
+  background-color: white;
   width: 100%; }
 
 .page-play-thumb-title p {
-  color: #dcd6c0; }
+  color: rgba(0, 0, 0, 0.8); }
 
 .page-play-thumb-subtitle {
   position: absolute;
@@ -516,17 +517,13 @@ nav#menu {
   text-align: center;
   z-index: 99;
   background: rgba(0, 0, 0, 0.85);
-  color: #dcd6c0;
+  color: #ABABAB;
   box-shadow: 0px -5px 0px rgba(0, 0, 0, 0.7);
   -webkit-box-shadow: 0px -5px 0px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0px -5px 0px rgba(0, 0, 0, 0.7); }
 
 #about a {
-  color: #dcd6c0; }
-  #about a:active, #about a:focus {
-    color: #dcd6c0; }
-  #about a:hover {
-    color: #a04127; }
+  color: white; }
 
 #about img {
   max-width: 300px;

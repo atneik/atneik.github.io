@@ -47,7 +47,7 @@ $color-band7: rgba(0, 0, 0, 0.85);
 $font-stack: 'Roboto', sans-serif;
 $font-stack-head: 'Roboto Condensed', sans-serif;
 
-$text-color: rgba(0, 0, 0, 0.7);
+$text-color: rgba(0, 0, 0, 0.8);
 $text-color-high: rgb(0, 0, 0);
 /*
 $text-color: rgba(255, 255, 255, 0.5);
@@ -432,6 +432,9 @@ border-bottom: none;
 	border-style: solid;
 	border-width: 5px;
 	border-color: $color-base;
+	
+	background-color: rgba(255, 255, 255, 0.8);
+
 	/*@include box-shadow-mix(0 1px 2px #aaaaaa);*/
 }
 /*
@@ -502,15 +505,15 @@ border-bottom: none;
 
 .page-play-thumb-title {
 	position: absolute; 
-	padding: 0.5em;
+	padding: 1em;
 	top: 0;
 	bottom: 0;
-	background-color: rgba(27, 23, 15, 0.9);
+	background-color: white;
 	width: 100%;
 }
 
 .page-play-thumb-title p {
-	color: $color-base;
+	color: $text-color;
 }
 
 .page-play-thumb-subtitle {
@@ -681,20 +684,13 @@ border-bottom: none;
 	text-align: center;
 	z-index: 99;
 	background: $color-band7;
-	color: $color-base;
+	color: #ABABAB;
 
 	@include box-shadow-mix(0px -5px 0px rgba(0, 0, 0, 0.7));
 }
 
 #about a {
-	color: $color-base;
-	&:active, &:focus{
-		color: $color-base;
-	}
-	&:hover {
-		color: $color-band2;
-	}
-
+	color: white;
 }
 
 #about img {
