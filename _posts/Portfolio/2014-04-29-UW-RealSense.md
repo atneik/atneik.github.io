@@ -11,7 +11,7 @@ tags:
 author: Aniket Handa
 size: 1
 permalink: /RS.html
-imagesrc: "/theme/img/icons/icon-3d.png"
+imagesrc: ""
 summary: ""
 ---
 *This is an ongoing project*

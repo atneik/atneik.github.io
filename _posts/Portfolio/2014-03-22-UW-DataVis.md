@@ -10,7 +10,7 @@ tags:
  - Front-End Engineering
 author: Aniket Handa
 size: 1
-imagesrc: "/theme/img/icons/icon-care2.png"
+imagesrc: ""
 summary: ""
 ---
 
