@@ -10,7 +10,7 @@ tags:
  - Front-End Engineering
 author: Aniket Handa
 size: 1
-imagesrc: ""
+imagesrc: "https://dl.dropboxusercontent.com/u/23289062/siteImages/DataViz/terror2.png"
 summary: ""
 ---
 

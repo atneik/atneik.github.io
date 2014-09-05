@@ -114,7 +114,7 @@ hr {
 }
 
 .img-responsive {
-    margin: 0 auto;
+    margin: 0 auto 1em auto;
 }
 
 .col-sm-offset-1-my {
@@ -124,6 +124,7 @@ hr {
 
 .container {
 	padding-bottom: 50px;
+	max-width: 979px;
 }
 
 /* ==================================================
@@ -432,7 +433,6 @@ border-bottom: none;
 	border-style: solid;
 	border-width: 5px;
 	border-color: $color-base;
-	
 	background-color: rgba(255, 255, 255, 0.8);
 
 	/*@include box-shadow-mix(0 1px 2px #aaaaaa);*/
@@ -459,9 +459,24 @@ border-bottom: none;
 */
 
 .page-thumb img {
-	padding: 10px;
-	height: 200px;
-	
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.grayscale {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+
+.grayscale:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
 }
 
 .page-thumb-title {
@@ -504,8 +519,9 @@ border-bottom: none;
 }
 
 .page-play-thumb-title {
-	position: absolute; 
-	padding: 1em;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-top: 1em;
 	top: 0;
 	bottom: 0;
 	width: 100%;

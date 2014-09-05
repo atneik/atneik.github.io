@@ -11,10 +11,15 @@ tags:
 author: Aniket Handa
 size: 1
 permalink: /RS.html
-imagesrc: ""
+imagesrc: "https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/ipad-stitch.png"
 summary: ""
 ---
 *This is an ongoing project*
+
+<div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
+<iframe src="//player.vimeo.com/video/103798732?title=0&amp;byline=0&amp;portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+</br>
 
 <a href="http://dynabots.com" target="_blank"> Check out our progress here </a>
 

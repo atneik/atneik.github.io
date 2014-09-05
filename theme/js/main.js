@@ -35,6 +35,23 @@ BRUSHED.mobileNav = function(){
 
 }
 
+
+/* ==================================================
+   Remove grayScale on mobile devices
+================================================== */
+BRUSHED.grayScaleAdd = function(){
+	var windowWidth = $(window).width();
+	if( windowWidth <= 767 ) {
+		//console.log($(".grayscale"));
+		$(".grayscale").removeClass("grayscale").addClass("grayscale-disable");
+
+	} else {
+		$(".grayscale-disable").removeClass("grayscale-disable").addClass("grayscale");
+	}
+}
+
+/* ================================================== */
+
 BRUSHED.listenerMenu = function(){
 	$('#mobile-nav').on('click', function(e){
 		$(this).toggleClass('open');
@@ -116,7 +133,7 @@ BRUSHED.showNavShadow = function(){
         	var top = $(document).scrollTop();
         	var $navbar = $('div.sticky-nav.stuck');
         	var $headbar = $('#indexHeader');
-        	console.log(top);
+        	//console.log(top);
         		if (top > 60) {
         			$navbar.css({'-webkit-box-shadow': '0 3px 5px rgba(125, 125, 125, 0.9)',
 	'-moz-box-shadow': '0 3px 5px rgba(125, 125, 125, 0.9)',
@@ -142,7 +159,6 @@ BRUSHED.showNavShadow = function(){
 
 $(document).ready(function(){
 	
-	
 	// Preload the page with jPreLoader
 	$('body').jpreLoader({
 		splashID: "#jSplash",
@@ -165,6 +181,7 @@ $(document).ready(function(){
 
 $(window).resize(function(){
 	BRUSHED.mobileNav();
+	BRUSHED.grayScaleAdd();
 });
 
 $('#pageTab a').click(function (e) {

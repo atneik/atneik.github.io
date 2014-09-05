@@ -16,7 +16,7 @@ tags:
  - Behavioral
 author: Aniket Handa
 size: 1
-imagesrc: ""
+imagesrc: "https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/ttt/nexus_framed-noShadow-low%20crop.png"
 summary: ""
 ---
 
