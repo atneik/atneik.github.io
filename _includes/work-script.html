@@ -2,8 +2,8 @@
 	<div class="row">
 	<div class="col-xs-12 col-sm-6 nopadding">
 	{% for post in site.categories.project %}
-		{% capture modulo %}{{ forloop.index0 | mod:2 }}{% endcapture %}		
-		{% if modulo == '0' %}
+		{% capture mod %}{{ forloop.index0 | modulo:2 }}{% endcapture %}		
+		{% if mod == '0' %}
 			<a href="{{ post.url }}">
 			<div class="page-thumb">
 				<div class="row grayscale">
@@ -27,8 +27,8 @@
 	</div>
 	<div class="col-xs-12 col-sm-6 nopadding">
 	{% for post in site.categories.project %}
-		{% capture modulo %}{{ forloop.index0 | mod:2 }}{% endcapture %}		
-		{% if modulo == '1' %}
+		{% capture mod %}{{ forloop.index0 | modulo:2 }}{% endcapture %}		
+		{% if mod == '1' %}
 		<a href="{{ post.url }}">
 			<div class="page-thumb">
 				<div class="row grayscale">
