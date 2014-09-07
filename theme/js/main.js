@@ -177,6 +177,7 @@ $(document).ready(function(){
 	BRUSHED.menu();
 	BRUSHED.fancyBox();
 	BRUSHED.showNavShadow();
+	BRUSHED.grayScaleAdd();
 });
 
 $(window).resize(function(){

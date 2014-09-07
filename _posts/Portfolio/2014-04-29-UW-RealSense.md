@@ -11,7 +11,7 @@ tags:
 author: Aniket Handa
 size: 1
 permalink: /RS.html
-imagesrc: "https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/ipad-stitch.png"
+imagesrc: "https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/ipad-stitch.jpeg"
 summary: ""
 ---
 *This is an ongoing project*
