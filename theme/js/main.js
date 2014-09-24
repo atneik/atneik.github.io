@@ -50,6 +50,27 @@ BRUSHED.grayScaleAdd = function(){
 	}
 }
 
+/* ==================================================
+   GrayScale
+================================================== */
+BRUSHED.grayScaleHover = function(){
+	$(".page-thumb").hover(
+		function() {
+			var windowWidth = $(window).width();
+			if( windowWidth > 767 ){
+				var items = $( this ).find("img");
+				items.removeClass("grayscale");
+			}
+		}, function() {
+			var windowWidth = $(window).width();
+			if( windowWidth > 767 ){
+				var items = $( this ).find("img")
+				items.addClass("grayscale");
+			}
+		}
+	);
+}
+
 /* ================================================== */
 
 BRUSHED.listenerMenu = function(){
@@ -182,11 +203,13 @@ $(document).ready(function(){
 	BRUSHED.fancyBox();
 	BRUSHED.showNavShadow();
 	BRUSHED.grayScaleAdd();
+	BRUSHED.grayScaleHover();
 });
 
 $(window).resize(function(){
 	BRUSHED.mobileNav();
 	BRUSHED.grayScaleAdd();
+	BRUSHED.grayScaleHover();
 });
 
 $('#pageTab a').click(function (e) {

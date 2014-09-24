@@ -1,6 +1,6 @@
 ---
-title: "Fun side projects"
-subtitle: "Some recent fun side projects"
+title: "Recent side projects"
+subtitle: ""
 layout: post-project
 date: 2014-01-01 10:20
 categories: project

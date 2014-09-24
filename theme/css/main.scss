@@ -112,6 +112,10 @@ hr {
 	margin: 50px 0;	
 }
 
+tag {
+	background-color: rgba(255, 255, 0, 0.33);
+}
+
 .img-responsive {
     margin: 0 auto 1em auto;
 }
@@ -123,7 +127,7 @@ hr {
 
 .container {
 	padding-bottom: 50px;
-	max-width: 979px;
+	/*max-width: 979px;*/
 }
 
 /* ==================================================
@@ -175,7 +179,6 @@ h5{
 h6{
 	font-size: 0.8em;
 	color: $color-band4;
-	margin:0 0 20px 0;
 }
 
 /* ==================================================
@@ -430,43 +433,52 @@ border-bottom: none;
 	position: relative;
 	overflow: hidden;
 	background-color: rgb(255, 255, 255);
+	margin: 0px 10px 20px 10px; 
 
 	@include box-shadow-mix(0 1px 2px #aaaaaa);
 }
 
 .page-thumb:hover {
-	position: relative;
-	overflow: hidden;
-	background-color: rgb(255, 255, 255);
 	z-index: 10;
-	@include box-shadow-mix(0 1px 20px #aaaaaa);
+	@include box-shadow-mix(0 10px 20px #aaaaaa);
 }
 
+.page-thumb .top-section {
+	padding: 1em 2em 0em 2em;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	color: rgba(0, 0, 0, 0.85);
+}
 
-/*
-.row a:nth-child(1) .page-thumb > .row > div:first-child {
-	@include background-gradient-mix ($color-band1, $color-band2);
+.page-thumb .top-section heading {
+	margin: 0;
+	font-size: 1.5em;
+	font-weight: $font-weight;
+	line-height: $line-height;
 }
-.row a:nth-child(2) .page-thumb > .row > div:first-child {
-	@include background-gradient-mix ($color-band2, $color-band3);
+
+.page-thumb .top-section tags {
+	font-size: 0.8em;
+	margin:0 0 20px 0;
+	font-weight: $font-weight;
+	line-height: $line-height;
+	display: block;
 }
-.row a:nth-child(3) .page-thumb > .row > div:first-child {
-	@include background-gradient-mix ($color-band3, $color-band4);
-}
-.row a:nth-child(4) .page-thumb > .row > div:first-child {
-	@include background-gradient-mix ($color-band4, $color-band5);
-}
-.row a:nth-child(5) .page-thumb > .row > div:first-child {
-	@include background-gradient-mix ($color-band5, $color-band6);
-}
-.row a:nth-child(6) .page-thumb > .row > div:first-child {
-	@include background-gradient-mix ($color-band6, $color-band7);
-}
-*/
 
 .page-thumb img {
 	padding-left: 15px;
 	padding-right: 15px;
+}
+
+.page-thumb .lower-section {
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-top: 1em;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	color: $text-color;
 }
 
 .grayscale {
@@ -483,27 +495,6 @@ border-bottom: none;
 .nopadding {
    padding: 0 !important;
    margin: 0 !important;
-}
-
-.page-thumb-title {
-	/*
-	top: 0;
-	background-color: rgba(27, 23, 15, 0.8);  adding trans to #1B170F
-	padding: 0.5em;
-	width: 100%;
-	/*
-	background:
-		-webkit-linear-gradient(bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
-		-moz-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
-		*/
-}
-
-.page-thumb-subtitle {
-	/*
-	position: relative; 
-	padding: 0.5em;
-	width: 100%;
-	*/
 }
 
 /*for Playground */
@@ -524,14 +515,7 @@ border-bottom: none;
 	padding: 0px;
 }
 
-.page-play-thumb-title {
-	padding-left: 2em;
-	padding-right: 2em;
-	padding-top: 1em;
-	top: 0;
-	bottom: 0;
-	width: 100%;
-}
+
 
 .page-play-thumb-title p {
 	color: $text-color;
@@ -545,8 +529,6 @@ border-bottom: none;
 	background-color: rgba(27, 23, 15, 0.9);
 	width: 100%;
 }
-/**/
-
 
 .page-alternate {
 	background: rgb(128,128,128);
@@ -987,12 +969,12 @@ footer .credits a{
 	
 /* Video */
 .flex-video {
-position: relative;
-padding-top: 25px;
-padding-bottom: 67.5%;
-height: 0;
-margin-bottom: 16px;
-overflow: hidden;
+	position: relative;
+	padding-top: 25px;
+	padding-bottom: 67.5%;
+	height: 0;
+	margin-bottom: 16px;
+	overflow: hidden;
 }
  
 .flex-video.widescreen { padding-bottom: 57.25%; }
