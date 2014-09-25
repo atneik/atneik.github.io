@@ -68,7 +68,7 @@ tag {
 
 .container {
   padding-bottom: 50px;
-  /*max-width: 979px;*/ }
+  max-width: 979px; }
 
 /* ==================================================
    Typography
@@ -322,7 +322,7 @@ nav#menu {
   -moz-box-shadow: 0 10px 20px #aaaaaa; }
 
 .page-thumb .top-section {
-  padding: 1em 2em 0em 2em;
+  padding: 2em 3em 0em 3em;
   top: 0;
   bottom: 0;
   width: 100%;
@@ -346,9 +346,7 @@ nav#menu {
   padding-right: 15px; }
 
 .page-thumb .lower-section {
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-top: 1em;
+  padding: 2em 3em 0em 3em;
   top: 0;
   bottom: 0;
   width: 100%;
