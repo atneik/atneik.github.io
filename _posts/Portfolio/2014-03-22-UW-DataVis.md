@@ -15,6 +15,16 @@ summary: ""
 ---
 
 <div class="container">
+	<br/><br/>
+	<h1>{{ page.title }}</h1>
+	<p class="meta" style="text-align: center">
+	<tags>
+		{% for tag in page.tags %}
+			<tag>{{ tag }}</tag> 
+			{% unless forloop.last %} / {% endunless %}
+		{% endfor %}
+	</tags>
+	</p>
 	<div class="row">
 	{% for post in site.tags.DataVis %}
 		<a href="{{ post.url }}">
