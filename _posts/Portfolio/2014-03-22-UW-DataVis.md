@@ -27,22 +27,31 @@ summary: ""
 	</p>
 	<div class="row">
 	{% for post in site.tags.DataVis %}
-		<a href="{{ post.url }}">
+		
 		<div class="page">
 			<h2>{{ post.title }}</h2>
+			
+			<p>
 			<div class="page-play-thumb">
 				<div>	
 					<img class="img-responsive" src="{{ post.imagesrc }}">
 				</div>
 			</div>
-			</br>
-			<strong>{{ post.date | date_to_string }}</strong>
-			//
+			</p>
+			<p>
 			{% if post.summary %}
 				{{ post.summary }}
 			{% endif %}
+			</p>
+			<p class="meta">
+				{% for link_hash in post.links %}
+      				{% for link in link_hash %}
+    					<a href="{{ link[1] }}" target="_blank">{{ link[0] }}</a>
+  					{% endfor %}
+  				{% endfor %}
+  				<a href="{{ post.url }}" target="_blank"> Full post </a>
+			</p>
 		</div>
-		</a>
 	{% endfor %}
 	</div>
 </div>

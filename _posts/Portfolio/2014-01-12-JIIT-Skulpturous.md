@@ -4,7 +4,7 @@ subtitle: "In this upcoming 3D revolution, can we bring 3D content creation to m
 layout: post-project
 date: 2014-1-12 10:20
 categories: project
-tags: Kinect 3D Java OpenNI
+tags: Kinect 3D Java OpenNI OpenGL
 author: Aniket Handa
 size: 1
 imagesrc: "https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/skulp/skulpturous2.jpg"

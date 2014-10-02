@@ -53,8 +53,15 @@ End Header -->
 	<div class="row">
 		<div class="page">
 			<h1>{{ page.title }}</h1>
-			<p class="meta" style="text-align: center">
+			<p class="meta">
 				{{ page.date | date_to_string }}
+			</p>
+			<p class="meta">
+				{% for link_hash in page.links %}
+      				{% for link in link_hash %}
+    					<a href="{{ link[1] }}" target="_blank">{{ link[0] }}</a>
+  					{% endfor %}
+  				{% endfor %}
 			</p>
 			<div class="post">
 				{{ content }}

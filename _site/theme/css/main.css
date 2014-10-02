@@ -57,10 +57,11 @@ hr {
   margin: 50px 0; }
 
 tag {
-  background-color: rgba(255, 255, 0, 0.33); }
+  background-color: rgba(255, 255, 0, 0.33);
+  line-height: 1.8em; }
 
 .img-responsive {
-  margin: 0 auto 1em auto; }
+  margin: 0 auto 0 auto; }
 
 .col-sm-offset-1-my {
   margin-left: 2.08333325%;
@@ -302,24 +303,24 @@ nav#menu {
   padding: 5rem 5% 5rem 5%;
   border-radius: 3px;
   background-color: white;
-  box-shadow: 0 1px 2px #aaaaaa;
-  -webkit-box-shadow: 0 1px 2px #aaaaaa;
-  -moz-box-shadow: 0 1px 2px #aaaaaa; }
+  box-shadow: 0 0px 2px #aaaaaa;
+  -webkit-box-shadow: 0 0px 2px #aaaaaa;
+  -moz-box-shadow: 0 0px 2px #aaaaaa; }
 
 .page-thumb {
   position: relative;
   overflow: hidden;
   background-color: white;
   margin: 0px 10px 20px 10px;
-  box-shadow: 0 1px 2px #aaaaaa;
-  -webkit-box-shadow: 0 1px 2px #aaaaaa;
-  -moz-box-shadow: 0 1px 2px #aaaaaa; }
+  box-shadow: 0 0px 2px #aaaaaa;
+  -webkit-box-shadow: 0 0px 2px #aaaaaa;
+  -moz-box-shadow: 0 0px 2px #aaaaaa; }
 
 .page-thumb:hover {
   z-index: 10;
-  box-shadow: 0 10px 20px #aaaaaa;
-  -webkit-box-shadow: 0 10px 20px #aaaaaa;
-  -moz-box-shadow: 0 10px 20px #aaaaaa; }
+  box-shadow: 0 5px 20px #aaaaaa;
+  -webkit-box-shadow: 0 5px 20px #aaaaaa;
+  -moz-box-shadow: 0 5px 20px #aaaaaa; }
 
 .page-thumb .top-section {
   padding: 2em 3em 0em 3em;
@@ -371,15 +372,21 @@ nav#menu {
 /*for Playground */
 .page-play-thumb {
   position: relative;
-  /*margin-top: 1em;*/
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-  height: 300px;
-  /*border-radius: 3px;*/
+  background-color: white;
+  margin: 0px -10%;
+  /* margin-top: 1em; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* height: 300px; */
+  /* border-radius: 3px; */
   overflow: hidden;
-  /*@include box-shadow-mix(0 1px 2px #aaaaaa);*/ }
+  box-shadow: 0 3px 6px #aaaaaa;
+  -webkit-box-shadow: 0 3px 6px #aaaaaa;
+  -moz-box-shadow: 0 3px 6px #aaaaaa; }
 
+@media all and (max-width: 850px) {
+  .page-play-thumb {
+    margin: 0; } }
 .page-play-thumb img {
   padding: 0px; }
 
@@ -422,6 +429,19 @@ nav#menu {
 
 .post .col-xs-12 .col-sm-6 {
   padding: 15px 15px 15px 0px; }
+
+.meta {
+  text-align: center; }
+
+.meta a {
+  padding: 5px 10px;
+  color: white;
+  background-color: gray;
+  border: 1px solid gray; }
+
+.meta a:hover {
+  color: gray;
+  background-color: white; }
 
 /* ==================================================
    Section Portfolio

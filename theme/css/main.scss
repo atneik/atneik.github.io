@@ -114,10 +114,11 @@ hr {
 
 tag {
 	background-color: rgba(255, 255, 0, 0.33);
+	line-height: 1.8em;
 }
 
 .img-responsive {
-    margin: 0 auto 1em auto;
+    margin: 0 auto 0 auto;
 }
 
 .col-sm-offset-1-my {
@@ -426,7 +427,7 @@ border-bottom: none;
 	border-radius:3px;
 	background-color: rgb(255, 255, 255);
 
-	@include box-shadow-mix(0 1px 2px #aaaaaa);
+	@include box-shadow-mix(0 0px 2px #aaaaaa);
 }
 
 .page-thumb {
@@ -435,12 +436,12 @@ border-bottom: none;
 	background-color: rgb(255, 255, 255);
 	margin: 0px 10px 20px 10px; 
 
-	@include box-shadow-mix(0 1px 2px #aaaaaa);
+	@include box-shadow-mix(0 0px 2px #aaaaaa);
 }
 
 .page-thumb:hover {
 	z-index: 10;
-	@include box-shadow-mix(0 10px 20px #aaaaaa);
+	@include box-shadow-mix(0 5px 20px #aaaaaa);
 }
 
 .page-thumb .top-section {
@@ -498,15 +499,22 @@ border-bottom: none;
 /*for Playground */
 .page-play-thumb {
 	position: relative;
-	/*margin-top: 1em;*/
-	margin-left:auto;
-    margin-right:auto;
-	padding: 0;
-	height: 300px;
-	/*border-radius: 3px;*/
+	background-color: white;
+	margin: 0px -10%;
+	/* margin-top: 1em; */
+	/* margin-left: auto; */
+	/* margin-right: auto; */
+	/* height: 300px; */
+	/* border-radius: 3px; */
 	overflow: hidden;
 	
-	/*@include box-shadow-mix(0 1px 2px #aaaaaa);*/
+	@include box-shadow-mix(0 3px 6px #aaaaaa);
+}
+
+@media all and (max-width: 850px){
+	.page-play-thumb {
+		margin: 0;
+	}
 }
 
 .page-play-thumb img {
@@ -561,6 +569,22 @@ border-bottom: none;
 
 .post .col-xs-12 .col-sm-6{
 	padding: 15px 15px 15px 0px;
+}
+
+.meta {
+	text-align: center;
+}
+
+.meta a{
+	padding: 5px 10px;
+	color: white;
+	background-color: gray;
+	border: 1px solid gray;
+}
+
+.meta a:hover{
+	color: gray;
+	background-color: white;
 }
 
 
