@@ -2,7 +2,7 @@
 title: "Data Visualization"
 subtitle: "Projects during CSE 512 under Jeff Heer"
 layout: blank-project
-date: 2014-03-22 10:20
+date: 2014-04-27 10:20
 categories: project
 tags: 
  - Tableau 

@@ -6,7 +6,7 @@
 <!--[if gt IE 8]><!-->
 <html  lang="en-US">
 	<head>
-    	<title>Intel® RealSense – Next Gen 3D Interfaces</title>
+    	<title>Stitch</title>
         
         <!-- Meta Tags -->
         <meta charset="utf-8">
@@ -111,17 +111,23 @@
 <div class="container">
 	<div class="row">
 		<div class="page">
-			<h1>Intel® RealSense – Next Gen 3D Interfaces</h1>
+			<h1>Stitch</h1>
 			<p class="meta">
 				<tags>
 						
-							<tag>Intel Perceptual Computing SDK</tag> 
+							<tag>Intel</tag> 
+							 / 
+						
+							<tag>Perceptual Computing SDK</tag> 
 							 / 
 						
 							<tag>3D gestures</tag> 
 							 / 
 						
-							<tag>Publication Industry</tag> 
+							<tag>Publishing</tag> 
+							 / 
+						
+							<tag>Unity3D</tag> 
 							
 						
 				</tags>
@@ -134,17 +140,107 @@
   				
 			</p>
 			<div class="post">
-				<p><em>This is an ongoing project</em></p>
-
-<div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
+				<div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
 <iframe src="//player.vimeo.com/video/103798732?title=0&amp;byline=0&amp;portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 
 <p></br></p>
 
-<p>As technology becomes more ambient and hides itself in the environment, it is becoming more obvious that the next paradigm of user interface could be a based on natural 3D gestures. Industry is bringing the technology to the devices such as tablets and smartphones <a href="http://www.theverge.com/2014/1/6/5281120/kinect-like-cameras-are-coming-to-your-next-laptop-or-tablet">[1]</a>, whereas research is being done to integrate the technology with wearable devices <a href="http://dl.acm.org/citation.cfm?id=2502042">[2]</a>. Devices such as smart watches deal with limited display to touch and also head mounted displays (like Google glass) deal with awkward interaction techniques, can be a good candidate for using 3D gestures as input. HCI can play a major role in defining interactions to provide all together new experience to the user. It can also explore new domains wherein this technology can be used by carefully considering the value provided by it as compared to existing solutions.</p>
+<h2>Introduction</h2>
 
-<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/RS/IMG_7820-750x500-b034bd.JPG" alt="image"></p>
+<p>The capstone project during MHCI+D focused on promoting novel applications of 3D image capture and touch gesture technology in the news publishing industry. My team partnered with Intel, who challenged us to envision a system that creates value for their upcoming RealSense depth-sensing camera in the News publishing industry. </p>
+
+<p>Before hopping onto secondary research we evaluated existing spatial sensing platforms, and meanwhile also researched current publishing industry.</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/stitch-slide-pics-low/3.jpg" alt="image"></p>
+
+<p>Then, our secondary research highlighted that the way people consume news is changing, due to its online access. However, the current news business model still supports print-based news, rather than digital. On the other hand, emerging technologies are enabling more immersive, collaborative experiences.</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/stitch-slide-pics-low/4.jpg" alt="image"></p>
+
+<p>We combined these insights to form the following design question.</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/stitch-slide-pics-low/1.jpg" alt="image"></p>
+
+<p>Our design response was Stitch:</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/stitch-slide-pics-low/0.jpg" alt="image"></p>
+
+<p>We conceptualized the whole system but concentrated on one part of it which delth with exploration of news media on a tablet. Following the system diagram.</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/stitch-slide-pics-low/5.jpg" alt="image"></p>
+
+<p>To refine the solution we iterated by developing functional prototypes backed by user testing and evaluation. We took the help of rapid prototyping to answer the following questions:</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/stitch-slide-pics-low/7.jpg" alt="image"></p>
+
+<h2>Prototyping</h2>
+
+<p>Before developing the final prototype we had several iterations of prototypes at increasing level of fidelity.</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/stitch-slide-pics-low/6.jpg" alt="image"></p>
+
+<p>The final explore prototype supported the following interactions:</p>
+
+<h4>Select an Article</h4>
+
+<blockquote>
+<p>View the journalist-curated list of immersive articles and select to read more about it with 3D reconstruction in the background.</p>
+</blockquote>
+
+<p><video width="100%" loop autoplay>
+  <source src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/movie-trims/article.mp4" type="video/mp4">
+  <source src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/movie-trims/article.webm" type="video/webm">
+  Your browser does not support HTML5 video.
+</video></p>
+
+<h4>Fly-in</h4>
+
+<blockquote>
+<p>By tapping on start user dives down into the 3D reconstruction of the relevant place where the news took place. Fly-in gives a spatial perspective to the user.</p>
+</blockquote>
+
+<p><video width="100%" loop autoplay>
+  <source src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/movie-trims/fly.mp4" type="video/mp4">
+  <source src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/movie-trims/fly.webm" type="video/webm">
+  Your browser does not support HTML5 video.
+</video></p>
+
+<h4>Navigate</h4>
+
+<blockquote>
+<p>Exploring a digital reconstruction of a news story’s environment as a way to deepen understanding of a situation, event, or location.</p>
+</blockquote>
+
+<p><video width="100%" loop autoplay>
+  <source src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/movie-trims/nav.mp4" type="video/mp4">
+  <source src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/movie-trims/nav.webm" type="video/webm">
+  Your browser does not support HTML5 video.
+</video></p>
+
+<h4>Content Markers</h4>
+
+<blockquote>
+<p>View multiple perspectives on the news through dynamic journalist and reader-contributed content. Linking these content markers together can generate Walkthroughs, which help create a story that users can follow.</p>
+</blockquote>
+
+<p><video width="100%" loop autoplay>
+  <source src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/movie-trims/marker.mp4" type="video/mp4">
+  <source src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/movie-trims/marker.webm" type="video/webm">
+  Your browser does not support HTML5 video.
+</video></p>
+
+<h4>Filter Markers</h4>
+
+<blockquote>
+<p>Filters helps in focusing on the content markers that matter the most. This protects users from getting overwhelmed by large number of markers.</p>
+</blockquote>
+
+<p><video width="100%" loop autoplay>
+  <source src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/movie-trims/filter.mp4" type="video/mp4">
+  <source src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/movie-trims/filter.webm" type="video/webm">
+  Your browser does not support HTML5 video.
+</video></p>
 
 <div class= "col-xs-12">    
     <div class="col-sm-6">
@@ -152,7 +248,6 @@
     </div>
     <div class="col-sm-6">
     
-
     </div>
 </div>
 
@@ -185,16 +280,22 @@
 			<div class="page-thumb">
 				<div class="row">
 					<div class="top-section">
-						<heading>Intel® RealSense – Next Gen 3D Interfaces</heading>
+						<heading>Stitch</heading>
 						<tags>
 						
-							<tag>Intel Perceptual Computing SDK</tag> 
+							<tag>Intel</tag> 
+							 / 
+						
+							<tag>Perceptual Computing SDK</tag> 
 							 / 
 						
 							<tag>3D gestures</tag> 
 							 / 
 						
-							<tag>Publication Industry</tag> 
+							<tag>Publishing</tag> 
+							 / 
+						
+							<tag>Unity3D</tag> 
 							
 						
 						</tags>
@@ -213,39 +314,7 @@
 	
 				
 		
-			<a href="/project/2014/04/27/UW-FBHack.html">
-			<div class="page-thumb">
-				<div class="row">
-					<div class="top-section">
-						<heading>Facebook Hackathon</heading>
-						<tags>
-						
-							<tag>Front-End Development</tag> 
-							 / 
-						
-							<tag>Ideation</tag> 
-							 / 
-						
-							<tag>APIs</tag> 
-							
-						
-						</tags>
-					</div>
-					<img class="img-responsive grayscale" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/showlist/showlist.jpeg">
-					<div class="lower-section">
-						<p> Won the 2nd position at the PNW regional Facebook Hackathon by designing and developing a platform to find and rate live concerts in 20 hours! </p>
-					</div>
-				</div>
-			</div>
-			</a>
-		
-	
-				
-		
-	
-				
-		
-			<a href="/project/2014/03/22/UW-DataVis.html">
+			<a href="/project/2014/04/27/UW-DataVis.html">
 			<div class="page-thumb">
 				<div class="row">
 					<div class="top-section">
@@ -266,6 +335,38 @@
 					<img class="img-responsive grayscale" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/DataViz/terror2.png">
 					<div class="lower-section">
 						<p> Projects during CSE 512 under Jeff Heer </p>
+					</div>
+				</div>
+			</div>
+			</a>
+		
+	
+				
+		
+	
+				
+		
+			<a href="/project/2014/03/22/UW-FBHack.html">
+			<div class="page-thumb">
+				<div class="row">
+					<div class="top-section">
+						<heading>Facebook Hackathon</heading>
+						<tags>
+						
+							<tag>Front-End Development</tag> 
+							 / 
+						
+							<tag>Ideation</tag> 
+							 / 
+						
+							<tag>APIs</tag> 
+							
+						
+						</tags>
+					</div>
+					<img class="img-responsive grayscale" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/showlist/showlist.jpeg">
+					<div class="lower-section">
+						<p> Won the 2nd position at the PNW regional Facebook Hackathon by designing and developing a platform to find and rate live concerts in 20 hours! </p>
 					</div>
 				</div>
 			</div>
