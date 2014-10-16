@@ -325,11 +325,13 @@ nav#menu {
 .page-thumb .top-section {
   padding: 2em 3em 0em 3em;
   top: 0;
+  color: white;
   bottom: 0;
   width: 100%;
-  color: rgba(0, 0, 0, 0.85); }
+  background: rgba(0, 0, 0, 0.85); }
 
 .page-thumb .top-section heading {
+  color: #D8D263;
   margin: 0;
   font-size: 1.5em;
   font-weight: 300;
@@ -337,14 +339,18 @@ nav#menu {
 
 .page-thumb .top-section tags {
   font-size: 0.8em;
-  margin: 0 0 20px 0;
+  padding: 10px 0 20px 0;
   font-weight: 300;
   line-height: 1.5em;
   display: block; }
 
+.page-thumb .top-section tags tag {
+  color: #ABABAB;
+  line-height: 1.8em;
+  background: none; }
+
 .page-thumb img {
-  padding-left: 15px;
-  padding-right: 15px; }
+  padding: 15px 15px 0px 15px; }
 
 .page-thumb .lower-section {
   padding: 2em 3em 0em 3em;
@@ -563,6 +569,9 @@ nav#menu {
   margin-bottom: 5%;
   border: 5px solid;
   border-color: rgba(0, 0, 0, 0.7); }
+
+#about h3 {
+  color: #D8D263; }
 
 /* ==================================================
    Social Area
