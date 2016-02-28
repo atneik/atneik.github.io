@@ -146,31 +146,31 @@ End Header -->
   				
 			</p>
 			<div class="post">
-				<h2>Interaction</h2>
+				<h2 id="interaction">Interaction</h2>
 
 <p>The Visualization focuses on discovering important trends and events that shaped the history due to Terrorism. It also tries to make user conscious about the number of unnecessary lives lost due to these unfortunate events. 
-<img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/DataViz/terror1.png" alt="image"></p>
+<img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/DataViz/terror1.png" alt="image" /></p>
 
-<p>We try to accomplish this by showing multiple views of the large dataset - </p>
+<p>We try to accomplish this by showing multiple views of the large dataset -</p>
 
 <ul>
-<li>The Global Map view - Shows the world map with color encoded countries according to number of killings over the selected period of time. </li>
-<li>Country Wise view - Shows circle graphs over the selected period of time. </li>
-<li>Brushing tool - Shows a bar graph of total killings in every month.</li>
+  <li>The Global Map view - Shows the world map with color encoded countries according to number of killings over the selected period of time.</li>
+  <li>Country Wise view - Shows circle graphs over the selected period of time.</li>
+  <li>Brushing tool - Shows a bar graph of total killings in every month.</li>
 </ul>
 
 <p>The purpose of all these three views is different. The Map view shows the high level effect on countries due to terrorism, whereas the Country wise view concentrates on comparison, ordering, discovering trends of events between two or more countries, and also it facilitates finding the event which caused the mishap. While these two views focus over a period of time, the Brushing tool helps constantly see the visualization over the full period. It also helps in controlling the other two views.</p>
 
 <p>The visualization features basically three interaction techniques:</p>
 
-<p><em>1. Brush:</em> </p>
+<p><em>1. Brush:</em></p>
 
-<p>To brush and link multiple views we use a timeline as a background, which starts from first day of Jan, 2000 to Jan, 2011. It supports </p>
+<p>To brush and link multiple views we use a timeline as a background, which starts from first day of Jan, 2000 to Jan, 2011. It supports</p>
 
 <ul>
-<li>Expansion of the current selection in either direction, </li>
-<li>Dragging of the span over the timeline, and </li>
-<li>Clicking outside the span selects that particular month.<br></li>
+  <li>Expansion of the current selection in either direction,</li>
+  <li>Dragging of the span over the timeline, and</li>
+  <li>Clicking outside the span selects that particular month.</li>
 </ul>
 
 <p><em>2. Select:</em></p>
@@ -180,154 +180,178 @@ End Header -->
 <p><em>3. Hover:</em></p>
 
 <p>Details on demand - Hovering over a country in the World Map reveals the total number of killings in that country over the period. Also, hovering over a data point in  the country wise view reveals more information about the event w.r.t. to the data point. 
-<img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/DataViz/terror2.png" alt="image"></p>
+<img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/DataViz/terror2.png" alt="image" /></p>
 
-<h2>Dataset</h2>
-
-<p>The visualization heavily depends upon dataset acquired from <a href="http://www.start.umd.edu/gtd">Global Terrorism Database</a> (GTD, University of Maryland). </p>
-
-<blockquote>
-<p>It is currently the most comprehensive unclassified data base on over 113,000 terrorist events, occurred between 1970 and 2012 in the world.</p>
-</blockquote>
+<h2 id="dataset">Dataset</h2>
+<p>The visualization heavily depends upon dataset acquired from <a href="http://www.start.umd.edu/gtd">Global Terrorism Database</a> (GTD, University of Maryland). 
+&gt;It is currently the most comprehensive unclassified data base on over 113,000 terrorist events, occurred between 1970 and 2012 in the world.</p>
 
 <p>Each event consists information on the date, location, number of people killed and injured, weapons used, intention, group or individual involved, target, summary, cites, etc.</p>
 
 <p>The dataset was cleaned before being directly used. Many required values were <code>null</code> or inconsistent. For example, some of the 3 Letter country codes from the database were not matching to that in the <a href="http://datamaps.github.io/">Datamap</a> object.</p>
 
-<h2>Running Instructions</h2>
+<h2 id="running-instructions">Running Instructions</h2>
 
 <p>Access the visualization <a href="http://cse512-14w.github.io/a3-chaoyu-aniket/">here</a>. View it in full screen for better experience.</p>
 
-<h4>OR</h4>
+<h4 id="or">OR</h4>
 
-<p>Download this repository and run </p>
+<p>Download this repository and run</p>
 
-<p><code>python -m SimpleHTTPServer 9000</code> </p>
+<p><code>python -m SimpleHTTPServer 9000</code></p>
 
-<p>at the root and access the visualization from <a href="http://localhost:9000/">http://localhost:9000/</a> using your favorite web browser. </p>
+<p>at the root and access the visualization from <a href="http://localhost:9000/">http://localhost:9000/</a> using your favorite web browser.</p>
 
-<h2>Story Board</h2>
+<h2 id="story-board">Story Board</h2>
 
-<p>We started off with data search and found many datasets which called our attention. But before finalizing on one we briefly explored all of them using Tableau.</p>
-
-<h4>Exploration</h4>
+<p>We started off with data search and found many datasets which called our attention. But before finalizing on one we briefly explored all of them using Tableau.
+####Exploration</p>
 
 <ul>
-<li><p>World Map representing countries with more killings (nkill) by more red.
-<img src="https://raw.github.com/CSE512-14W/a3-chaoyu-aniket/master/images/tableau/Sheet%207.png" alt="Sheet 7"></p></li>
-<li><p>A time stream representing the trend
-<img src="https://raw.github.com/CSE512-14W/a3-chaoyu-aniket/master/images/tableau/Sheet%205.png" alt="Sheet 5"></p></li>
-<li><p>Heat Map of all countries w.r.t. to time, colored according to number of killings.
-<img src="https://raw.github.com/CSE512-14W/a3-chaoyu-aniket/master/images/tableau/Sheet%204.png" alt="Sheet 4"></p></li>
-<li><p>Bubble Chart
-<img src="https://raw.github.com/CSE512-14W/a3-chaoyu-aniket/master/images/tableau/Sheet%201.png" alt="Sheet 1"></p></li>
+  <li>
+    <p>World Map representing countries with more killings (nkill) by more red.
+<img src="https://raw.github.com/CSE512-14W/a3-chaoyu-aniket/master/images/tableau/Sheet%207.png" alt="Sheet 7" /></p>
+  </li>
+  <li>
+    <p>A time stream representing the trend
+<img src="https://raw.github.com/CSE512-14W/a3-chaoyu-aniket/master/images/tableau/Sheet%205.png" alt="Sheet 5" /></p>
+  </li>
+  <li>
+    <p>Heat Map of all countries w.r.t. to time, colored according to number of killings.
+<img src="https://raw.github.com/CSE512-14W/a3-chaoyu-aniket/master/images/tableau/Sheet%204.png" alt="Sheet 4" /></p>
+  </li>
+  <li>
+    <p>Bubble Chart
+<img src="https://raw.github.com/CSE512-14W/a3-chaoyu-aniket/master/images/tableau/Sheet%201.png" alt="Sheet 1" /></p>
+  </li>
 </ul>
 
 <p>While exploring these charts using Tableau we also simulated them using pages year wise to evaluate various interactions possible.</p>
 
-<h4>Sketching</h4>
+<h4 id="sketching">Sketching</h4>
 
 <ul>
-<li><p>During Brainstorm<br>
-<img src="https://raw.github.com/CSE512-14W/a3-chaoyu-aniket/master/images/sketch/s1.jpg" alt="S1"></p></li>
-<li><p>Final sketch before we started coding
-<img src="https://raw.github.com/CSE512-14W/a3-chaoyu-aniket/master/images/sketch/s2.jpg" alt="S2"></p></li>
+  <li>
+    <p>During Brainstorm<br />
+<img src="https://raw.github.com/CSE512-14W/a3-chaoyu-aniket/master/images/sketch/s1.jpg" alt="S1" /></p>
+  </li>
+  <li>
+    <p>Final sketch before we started coding
+<img src="https://raw.github.com/CSE512-14W/a3-chaoyu-aniket/master/images/sketch/s2.jpg" alt="S2" /></p>
+  </li>
 </ul>
 
-<p>The top portion is a timeline wherein one can select the months from 2000 to 2010. It is used to brush below two visualizations. It affords all the interactions mentioned above.   </p>
+<p>The top portion is a timeline wherein one can select the months from 2000 to 2010. It is used to brush below two visualizations. It affords all the interactions mentioned above.</p>
 
-<h4>Changes between Storyboard and the Final Implementation</h4>
+<h4 id="changes-between-storyboard-and-the-final-implementation">Changes between Storyboard and the Final Implementation</h4>
 
 <p>There are not any significant changes between the final sketch and the final implementation. Though there were some stubble changes in placement of various elements, the colors, the scale used. But, the overall interaction, views and underlining objective remained the same.</p>
 
 <ul>
-<li>Its hard to sketch colors and exactly understand how they will be perceived without an actual running prototype. We didn&#39;t consider the use of log scale for color encoding, until we saw the running visualization.</li>
-<li>We first envisioned the country wise visualization to be similar to time stream from Tableau (above), but we ended up plotting translucent circles with size dependent upon killings to represent each event.</li>
+  <li>Its hard to sketch colors and exactly understand how they will be perceived without an actual running prototype. We didn’t consider the use of log scale for color encoding, until we saw the running visualization.</li>
+  <li>We first envisioned the country wise visualization to be similar to time stream from Tableau (above), but we ended up plotting translucent circles with size dependent upon killings to represent each event.</li>
 </ul>
 
-<h2>Development Process</h2>
+<h2 id="development-process">Development Process</h2>
 
-<h4>Work Breakdown</h4>
-
+<h4 id="work-breakdown">Work Breakdown</h4>
 <p>The two member team divided the work as equally as possible and also helped each other out on. Roughly we allocated the tasks as follows:</p>
 
 <p><strong><em>Chaoyu Yang</em></strong></p>
 
 <ul>
-<li>Data Cleaning</li>
-<li>Implementation of Brushed time scale</li>
-<li>on Brushed event</li>
-<li>Individual Country visualization </li>
+  <li>Data Cleaning</li>
+  <li>Implementation of Brushed time scale</li>
+  <li>on Brushed event</li>
+  <li>Individual Country visualization</li>
 </ul>
 
 <p><strong><em>Aniket Handa</em></strong></p>
 
 <ul>
-<li>Dataset Exploration</li>
-<li>World Map implementation and brush integration</li>
-<li>Country selection</li>
-<li>Colors</li>
+  <li>Dataset Exploration</li>
+  <li>World Map implementation and brush integration</li>
+  <li>Country selection</li>
+  <li>Colors</li>
 </ul>
 
 <p><strong><em>Together</em></strong></p>
 
 <ul>
-<li>Visualization design and its interaction</li>
-<li>Integration of various features</li>
+  <li>Visualization design and its interaction</li>
+  <li>Integration of various features</li>
 </ul>
 
-<h4>Development Process</h4>
+<h4 id="development-process-1">Development Process</h4>
 
 <ul>
-<li>The first task was to mutually decide what basic information is needed from the large dataset to produce the designed visualization. The data format was also decided.</li>
-<li>Then, we hopped onto data cleaning and generated CSVs and JSONs of the required data.</li>
-<li>We decided the project into three milestones. First, basic world map representing the data. Second, brushed and linked map. Third, select countries and visualize.</li>
-<li>While, one person was cleaning the data, other was readying the basic front of the world map waiting for the data.</li>
-<li>The next step, after integrating the data with the map, was to implement the brushing feature.</li>
-<li>After this, the country selection feature was implemented.</li>
-<li>Then we briefly worked upon aesthetics and colors of the visualization.</li>
-<li>Finally, we made trend visualization of the selected countries. </li>
+  <li>The first task was to mutually decide what basic information is needed from the large dataset to produce the designed visualization. The data format was also decided.</li>
+  <li>Then, we hopped onto data cleaning and generated CSVs and JSONs of the required data.</li>
+  <li>We decided the project into three milestones. First, basic world map representing the data. Second, brushed and linked map. Third, select countries and visualize.</li>
+  <li>While, one person was cleaning the data, other was readying the basic front of the world map waiting for the data.</li>
+  <li>The next step, after integrating the data with the map, was to implement the brushing feature.</li>
+  <li>After this, the country selection feature was implemented.</li>
+  <li>Then we briefly worked upon aesthetics and colors of the visualization.</li>
+  <li>Finally, we made trend visualization of the selected countries.</li>
 </ul>
 
-<h4>Technologies used</h4>
-
+<h4 id="technologies-used">Technologies used</h4>
 <ul>
-<li>D3.js</li>
-<li><a href="http://datamaps.github.io/">Datamap</a></li>
-<li>underscore.js</li>
-<li>Twitter Bootstrap</li>
-<li>jQuery</li>
-<li>Ruby</li>
-<li>Tableau (for exploration)</li>
+  <li>D3.js</li>
+  <li><a href="http://datamaps.github.io/">Datamap</a></li>
+  <li>underscore.js</li>
+  <li>Twitter Bootstrap</li>
+  <li>jQuery</li>
+  <li>Ruby</li>
+  <li>Tableau (for exploration)</li>
 </ul>
 
-<h4>Time Spend</h4>
+<h4 id="time-spend">Time Spend</h4>
 
-<p>Task | ~Time (Individual) | 
------------- | -------------
-Data Search | 5-6 hours
-Data Exploration | 10-11 hours
-Discussing, Designing &amp; Sketching | 15-16 hours
-Coding, Cleaning &amp; Learning D3| 25-30 hours </p>
+<table>
+  <thead>
+    <tr>
+      <th>Task</th>
+      <th>~Time (Individual)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Search</td>
+      <td>5-6 hours</td>
+    </tr>
+    <tr>
+      <td>Data Exploration</td>
+      <td>10-11 hours</td>
+    </tr>
+    <tr>
+      <td>Discussing, Designing &amp; Sketching</td>
+      <td>15-16 hours</td>
+    </tr>
+    <tr>
+      <td>Coding, Cleaning &amp; Learning D3</td>
+      <td>25-30 hours</td>
+    </tr>
+  </tbody>
+</table>
 
 <p>So, in total we individually spend approximately 60 hours on the assignment.</p>
 
 <p><strong>Time Consuming Aspects</strong></p>
 
 <ul>
-<li>Brainstorming &amp; Designing</li>
-<li>Learning D3</li>
-<li>Data exploration and then cleaning</li>
-<li>Dirty hack to select countries on the Datamap</li>
+  <li>Brainstorming &amp; Designing</li>
+  <li>Learning D3</li>
+  <li>Data exploration and then cleaning</li>
+  <li>Dirty hack to select countries on the Datamap</li>
 </ul>
 
-<h4>Future Work</h4>
-
+<h4 id="future-work">Future Work</h4>
 <ul>
-<li>Details on demand about the event, upon hovering on circles</li>
-<li>Show news articles (using NYT API?) based upon events</li>
-<li>Highlight the countries in selection</li>
-<li>Optimize algorithm and queries</li>
+  <li>Details on demand about the event, upon hovering on circles</li>
+  <li>Show news articles (using NYT API?) based upon events</li>
+  <li>Highlight the countries in selection</li>
+  <li>Optimize algorithm and queries</li>
 </ul>
 
 			</div>

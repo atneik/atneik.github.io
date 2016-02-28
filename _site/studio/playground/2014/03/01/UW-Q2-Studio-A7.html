@@ -142,75 +142,75 @@ End Header -->
 				
 			</p>
 			<div class="post">
-				<h2>Summary</h2>
+				<h2 id="summary">Summary</h2>
 
 <p>“Wearables are the future!”, as deemed by majority of futurist. They have the potential to become part of our lives without being intrusive. This week for HCID521, I prototyped a step counter. It basically used two pressure sensors to detect very single step in real-time.</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W6/3.JPG" alt="image"></p>
+<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W6/3.JPG" alt="image" /></p>
 
-<h2>Problem</h2>
+<h2 id="problem">Problem</h2>
 
 <p>Most of the step counters or fitness wearables available in the market rely on accelerometers. This limits their accuracy, as it can be sometimes challenging to classify certain movements as a step or not. They also have a disadvantage of not being lambently present in the environment/things, one has to remember to wear them and charge them.</p>
 
 <p>To address these concerns I prototyped a step counter, which will be embedded in the shoes (much like a Nike + iPod sensor). The vision is to make it independent of any other additional supporting device.</p>
 
-<h2>Design</h2>
+<h2 id="design">Design</h2>
 
-<h3>Design Considerations &amp; Constrains</h3>
-
-<ul>
-<li>Accuracy: It should accurately be able to detect steps, irrespective of the speed of the user. It correctly detect step count it looks for <strong>falling signal edges</strong> continuously in the two analog pressure sensor data stream. Upon detection it increments the number of steps.</li>
-<li>Real-time: As an Arduino does not support multi tasking, I used <strong>Interrupts</strong> for event handling. Arduino Uno supports two Interrupts at digital port number 2 and 3. Using Interrupts not only enabled better accuracy but also a better experience in terms of reliability and response time.</li>
-<li>Show Status: It uses an LCD to show current number of steps taken. It also blinks an LED upon some action being performed, such as on being <strong>Synced</strong> or <strong>Calibrated</strong>.</li>
-<li>Easy to sync: The interplay between the system and an external device used to sync should be as seamless as possible. It syncs just with a press of a button.</li>
-<li>Gives an experience of using an end product: To promote this as much as possible I bundled the system in a box which could be hand held by someone else when the user evaluation is done.</li>
-<li>Visualization: Though not being perfect in any sense, the step data on the PC used bar graphs to give an idea how the data can be interrupted and be useful to the user.</li>
-</ul>
-
-<h3>Basic Functionality</h3>
+<h3 id="design-considerations--constrains">Design Considerations &amp; Constrains</h3>
 
 <ul>
-<li>Display Steps</li>
-<li>Accurate step detection</li>
-<li>Syncs and uploads data</li>
-<li>Calibrates depending upon weight of the user</li>
-<li>Shows current status using LEDs and a LCD</li>
-<li>Shows a visualization on PC</li>
+  <li>Accuracy: It should accurately be able to detect steps, irrespective of the speed of the user. It correctly detect step count it looks for <strong>falling signal edges</strong> continuously in the two analog pressure sensor data stream. Upon detection it increments the number of steps.</li>
+  <li>Real-time: As an Arduino does not support multi tasking, I used <strong>Interrupts</strong> for event handling. Arduino Uno supports two Interrupts at digital port number 2 and 3. Using Interrupts not only enabled better accuracy but also a better experience in terms of reliability and response time.</li>
+  <li>Show Status: It uses an LCD to show current number of steps taken. It also blinks an LED upon some action being performed, such as on being <strong>Synced</strong> or <strong>Calibrated</strong>.</li>
+  <li>Easy to sync: The interplay between the system and an external device used to sync should be as seamless as possible. It syncs just with a press of a button.</li>
+  <li>Gives an experience of using an end product: To promote this as much as possible I bundled the system in a box which could be hand held by someone else when the user evaluation is done.</li>
+  <li>Visualization: Though not being perfect in any sense, the step data on the PC used bar graphs to give an idea how the data can be interrupted and be useful to the user.</li>
 </ul>
 
-<h2>Prototype</h2>
+<h3 id="basic-functionality">Basic Functionality</h3>
+
+<ul>
+  <li>Display Steps</li>
+  <li>Accurate step detection</li>
+  <li>Syncs and uploads data</li>
+  <li>Calibrates depending upon weight of the user</li>
+  <li>Shows current status using LEDs and a LCD</li>
+  <li>Shows a visualization on PC</li>
+</ul>
+
+<h2 id="prototype">Prototype</h2>
 
 <p>I approached the problem in a phase wise manner. First and the foremost was to get accurate step count. For this I connected the analog inputs from the sensors to A0 and A1 of the board.</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W6/7.JPG" alt="image"></p>
+<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W6/7.JPG" alt="image" /></p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W6/5.JPG" alt="image"></p>
+<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W6/5.JPG" alt="image" /></p>
 
 <p>I then analyzed the pressure data for various use cases and then coded a few conditions to check for the falling signal edge, in simpler terms, to check for the specific instant when the user lifts the feet or reduces pressure to a specific threshold.</p>
 
 <p>Then I soldered the LCD and attached it to various digital pins.</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W6/8.JPG" alt="image"></p>
+<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W6/8.JPG" alt="image" /></p>
 
 <p>After this, I programmed two interrupts for Sync and Calibration. These were called when push buttons where pressed.</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W6/6.JPG" alt="image"></p>
+<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W6/6.JPG" alt="image" /></p>
 
 <p>Upon Sync, it transferred the current step count to the connect PC. The data is read using the serial port and then visualized using a Processing sketch. (This was not a required deliverable, but was jus to give an overall experience. So, not perfect in any sense).</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W6/10.png" alt="image"></p>
+<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W6/10.png" alt="image" /></p>
 
 <p>Finally, I enclosed it in a casing and powered it using a 9V battery to make it portable; ready to be used for evaluation. The wire to the sensors was specially kept long so that user can comfortably put sensors in the shoes while other person holding rest of the system.</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W6/2.JPG" alt="image"></p>
+<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W6/2.JPG" alt="image" /></p>
 
-<h2>Analysis</h2>
+<h2 id="analysis">Analysis</h2>
 
-<h3>Conclusion &amp; Improvements</h3>
+<h3 id="conclusion--improvements">Conclusion &amp; Improvements</h3>
 
-<p>Electronic prototyping not also proves the technical feasibility of a design, but also gives more real-like experience due to its actual lag and interfacing issues. On the flip side, they can appear dirty and may change opinion of the target audience. Overall the prototype was successful in reaching its goals, given limited time. Though a number of things could be improved. </p>
+<p>Electronic prototyping not also proves the technical feasibility of a design, but also gives more real-like experience due to its actual lag and interfacing issues. On the flip side, they can appear dirty and may change opinion of the target audience. Overall the prototype was successful in reaching its goals, given limited time. Though a number of things could be improved.</p>
 
-<p>The size of the unit could be reduced, especially by using DIY kits targeted towards wearables, such as a LilyPad. The use of smaller dimension of components and conductive threads can provide better end experience. The calibration feature can be eliminated by automating it using some smart algorithms to compute threshold. This would make the system less complex. Also, the use of LCD to display current steps taken can be argued. Steps could be either be streamed in real-time or visualized later.  </p>
+<p>The size of the unit could be reduced, especially by using DIY kits targeted towards wearables, such as a LilyPad. The use of smaller dimension of components and conductive threads can provide better end experience. The calibration feature can be eliminated by automating it using some smart algorithms to compute threshold. This would make the system less complex. Also, the use of LCD to display current steps taken can be argued. Steps could be either be streamed in real-time or visualized later.</p>
 
 			</div>
 			<div id="disqus_thread"></div>

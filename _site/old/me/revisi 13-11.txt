@@ -1,2 +1,0 @@
-- Nambahin separator
-_ Mengubah padding di setiap section (portfolio, about, contact) menjadi 70px agar layout lebih konsisten.

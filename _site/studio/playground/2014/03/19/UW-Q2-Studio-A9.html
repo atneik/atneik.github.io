@@ -143,87 +143,85 @@ End Header -->
 			</p>
 			<div class="post">
 				<div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
-<iframe width="100%" height="100%" src="//www.youtube.com/embed/06HFTEHb90I?rel=0&modestbranding=1&rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="100%" src="//www.youtube.com/embed/06HFTEHb90I?rel=0&amp;modestbranding=1&amp;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
 </div>
-
 <p><br /></p>
 
-<h2>Summary</h2>
+<h2 id="summary">Summary</h2>
 
 <p>About a third of U.S. adults deal with neck and back problems. Here we seek to design a solution, which makes neck exercising fun. For this we use two prototyping techniques to quickly answer some questions regarding the design of the solution. We then user test the solution with two participants. The testing gave us interesting insights to “what works?” and “what might not work?” This helped us to scope down the problem and design a simple game-controlling interface that can be used with variety of games. Finally, the report outlines our analysis of the whole process.</p>
 
-<h2>Problem</h2>
+<h2 id="problem">Problem</h2>
 
-<p>According to recent survey, around 31% of U.S. adults have some sort of neck or back condition that causes them pain.  This condition gets worst with age.  Neck and back problems are highly correlated. Exercising the neck need more repetitions, and can easily become boring, the major reason it is neglected by majority of people. It also depends highly on lifestyle. The cubicle job has only promoted such problems. It is fascinating that there is no game targeted towards making exercise neck fun (As per our brief survey), not even using Microsoft Kinect. Here we present our problem questions, which are prototypes were suppose to answer. </p>
+<p>According to recent survey, around 31% of U.S. adults have some sort of neck or back condition that causes them pain.  This condition gets worst with age.  Neck and back problems are highly correlated. Exercising the neck need more repetitions, and can easily become boring, the major reason it is neglected by majority of people. It also depends highly on lifestyle. The cubicle job has only promoted such problems. It is fascinating that there is no game targeted towards making exercise neck fun (As per our brief survey), not even using Microsoft Kinect. Here we present our problem questions, which are prototypes were suppose to answer.</p>
 
-<h4>Design Question</h4>
+<h4 id="design-question">Design Question</h4>
 
 <p>“How can we provide an environment which makes neck exercising fun?</p>
 
 <p>Specific Questions
-• Prototype 1:  Behavioural prototype
+•	Prototype 1:  Behavioural prototype
 “What is the best way to interact with this type of system?”
 “What level of accuracy will be the base line?”</p>
 
-<p>• Prototype 2: Hardware Prototype
+<p>•	Prototype 2: Hardware Prototype
 “Is it technically feasible?” 
 “How will be the final experience like?”</p>
 
-<h2>Prototypes</h2>
+<h2 id="prototypes">Prototypes</h2>
 
-<h4>Behaviour Prototype</h4>
+<h4 id="behaviour-prototype">Behaviour Prototype</h4>
 
 <p>In order to learn about user’s behavior of intuitive commands via neck movement, we created a rapid behavior prototype for user testing. We first listed down the neck exercises that we need the user to perform. The picture below shows some neck movements which are good for exercising.</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W8/Untitled.png" alt="image"> </p>
+<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W8/Untitled.png" alt="image" /></p>
 
-<p>Next step was to map these basic exercises, or one might say neck gestures, to actions/tasks which are needed to interact with an immersive game. We mapped these to Top, Down, Right, Left ( As in to replace Arrow Keys in a typical keyboard). The Spin was mapped to the Return key.  </p>
+<p>Next step was to map these basic exercises, or one might say neck gestures, to actions/tasks which are needed to interact with an immersive game. We mapped these to Top, Down, Right, Left ( As in to replace Arrow Keys in a typical keyboard). The Spin was mapped to the Return key.</p>
 
 <p>Now, the next challenge was to find one or more games which are engaging and require low bandwidth. ‘Low bandwidth’ because we knew the precision of detecting neck gestures might not be that perfect, and we might only be able to capture certain movements confidently. We shortlisted to games as shown in picture. From the world famous nostalgia Mario Bros., recently famous Flappy bird and 2048, to which the whole programming community is currently hooked. The game play of all these games is fairly simple; they all require 4 key inputs or less.</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W8/Untitled88.png" alt="image">                                   </p>
+<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W8/Untitled88.png" alt="image" /></p>
 
 <p>We came up with quite a few gesture sets and games as said before that  could possibly map to one or more games. To choose one, we went on to Behaviour prototype all sets of gesture inputs. This gave us valuable findings and insights into advantages and disadvantages of each set of neck gestures. Now for the running the prototype, we first discussed about setting up the system, which allowed quick iterations and modifications on the fly. We used an external Keyboard to input commands as the user performed the gestures from the given set. We also took latency into consideration, for which we triggered the input with a small delay to account for technical latency and give more real-like experience. This Wizard of Oz technique, worked quite well highlighting problems.</p>
 
-<h4>Electronics Prototype</h4>
+<h4 id="electronics-prototype">Electronics Prototype</h4>
 
-<p>The behavior prototyping gave us clear foundation to take the process to higher fidelity. We choose to technically prototype it using an Arduino Do-It-Yourself development kit. This way we not only make a prove of concept and technically prove it, but also give an almost end-product like experience. It is a great way to run evaluation, as we get more applicable feedback and analysis. </p>
+<p>The behavior prototyping gave us clear foundation to take the process to higher fidelity. We choose to technically prototype it using an Arduino Do-It-Yourself development kit. This way we not only make a prove of concept and technically prove it, but also give an almost end-product like experience. It is a great way to run evaluation, as we get more applicable feedback and analysis.</p>
 
-<p>To develop this prototype we also used a 3-axis Accelerometer sensor to track acceleration in all three axises. The accelerometer sat in wearable head mounted cap, in which it was embedded. We also used a 9V battery pack to power the Arduino board and two X-bees to make the system portable. X-bees uses serial communication to transfer data to other X-Bees wirelessly in the same network. One X-bee was attached to the computer running Processing and the other X-Bee was attached to the RX &amp; TX of the Arduino board for transmitting the sensor data and receiving some commands respectively. </p>
+<p>To develop this prototype we also used a 3-axis Accelerometer sensor to track acceleration in all three axises. The accelerometer sat in wearable head mounted cap, in which it was embedded. We also used a 9V battery pack to power the Arduino board and two X-bees to make the system portable. X-bees uses serial communication to transfer data to other X-Bees wirelessly in the same network. One X-bee was attached to the computer running Processing and the other X-Bee was attached to the RX &amp; TX of the Arduino board for transmitting the sensor data and receiving some commands respectively.</p>
 
 <p>The received data is used to detect gestures using Processing. The gravity plays a major part is helping us differentiate the acceleration signal. Once we detect a gesture a system command is issued for a System Event regarding a key pressed. All four gestures generate their respective system event.</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W8/IMG_2639.JPG" alt="image"></p>
+<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W8/IMG_2639.JPG" alt="image" /></p>
 
-<p>The Processing not only just issues system events it also generates sound upon a successful gesture. This is important for feedback. The sound confirms the event been taken place, and prevents the user from performing the gesture again. </p>
+<p>The Processing not only just issues system events it also generates sound upon a successful gesture. This is important for feedback. The sound confirms the event been taken place, and prevents the user from performing the gesture again.</p>
 
 <p>Also, for better recognition of gestures we added a feature to calibrate the sensing. This enabled custom thresholds for each gesture. To calibrate, a user just have to move the to the position and press either ‘W’,’A’,’S’ or ’D’ keystroke depending upon the gesture. Though, it comes with a default setting that works in most cases.</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W8/IMG_2641.JPG" alt="image"> </p>
+<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W8/IMG_2641.JPG" alt="image" /></p>
 
-<h2>User Testing</h2>
-
-<h4>Testing Behavior Prototype</h4>
+<h2 id="user-testing">User Testing</h2>
+<p>####Testing Behavior Prototype</p>
 
 <p>Initially, we conducted an exploratory user testing with two participants. We expected to explore the interaction between neck movement and a computer game: what kind of neck gestures are needed for exercise? which of them are proper for an immersive game?. We have predefined a set of neck gestures and apply them to three different computer games.</p>
 
 <p>We provided them with a laptop computer with a game initiated and the related instructions for that game. Then the user will start playing the game via neck gestures. Because the performance of the game is actually not the most important feature, so we didn’t give the user any specific task such as finishing a level in the game. Instead we are more interested in whether such an environment is fun and engaging for the user. Therefore, we ask them to just play with the game and enjoy it, and we will evaluate how much they like playing the game, and whether it is a significant neck exercise.</p>
 
-<h4>Evaluating Behavior Prototype</h4>
+<h4 id="evaluating-behavior-prototype">Evaluating Behavior Prototype</h4>
 
 <p>Type of Game
-We found that not all games are appropriate for controlled using neck movement. Games like Flappy Bird have a really fast tempo, and need constant input to control the game which really intimidates the user. Because when they are doing a neck movement, their field of vision will be temporarily moved to the outside of the screen, and if they want to continually focus on the game, they have to do the gesture very fast. But moving neck fast is actually not good for exercise purpose and also have potential danger of injuring the neck. </p>
+We found that not all games are appropriate for controlled using neck movement. Games like Flappy Bird have a really fast tempo, and need constant input to control the game which really intimidates the user. Because when they are doing a neck movement, their field of vision will be temporarily moved to the outside of the screen, and if they want to continually focus on the game, they have to do the gesture very fast. But moving neck fast is actually not good for exercise purpose and also have potential danger of injuring the neck.</p>
 
 <p>Choice of Interaction
 An interesting finding is that our neck and head are physically working like a joystick, which provides us a perfect mapping of game controller. One thing we confused about is the mapping of left-right arrow key. Some people think shaking head are more intuitive while others think swinging is better. We found technically it’s really hard to figure out to which direction the command is when user shaking their head, so we choose swinging and start building our electronic prototype.</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W8/Screen%20Shot%202014-03-19%20at%203.33.19%20PM.png" alt="image"></p>
+<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W8/Screen%20Shot%202014-03-19%20at%203.33.19%20PM.png" alt="image" /></p>
 
-<h4>Testing Electronic Prototype</h4>
+<h4 id="testing-electronic-prototype">Testing Electronic Prototype</h4>
 
-<p>After building up the electronic prototype, we integrated it with the OS X system and allow it to send command keys to three different games. The same as we did with the behavior prototype, we asked the user to wear the hat with the sensor, introduce all the rules and purpose of this system, and then allow them to play with three different games. </p>
+<p>After building up the electronic prototype, we integrated it with the OS X system and allow it to send command keys to three different games. The same as we did with the behavior prototype, we asked the user to wear the hat with the sensor, introduce all the rules and purpose of this system, and then allow them to play with three different games.</p>
 
-<h4>Evaluating Electronic Prototype</h4>
+<h4 id="evaluating-electronic-prototype">Evaluating Electronic Prototype</h4>
 
 <p>Tolerance of Misinterpretation
 Although we tried many method for improving the accuracy of gesture recognizing, in the best case, the system can achieve around 90% precision at recognizing the users’ gesture. We found for the game 2048, occasionally random keystrokes are acceptable for gamers, which actually bring more fun to this game. But for games like Super Mario and Flappy Bird, users need more accuracy in terms of input, because it’s intense and need meticulous controller.</p>
@@ -231,13 +229,13 @@ Although we tried many method for improving the accuracy of gesture recognizing,
 <p>Wireless Or Not?
 We build our first electronic prototype with XBees to make it wireless with the intention that people may wear a hat and play the game wirelessly. Although it might be a good idea to make it wireless for end product, we eventually remove XBees and test it with a wired version of our prototype. The main reason is that XBees have relatively less community support and for some reason, it continually stop working which we can’t event debug to find where is the problem. The other reason is that for exploring the gaming environment and testing the interactions, it really doesn’t matter if it’s wireless or not. A longer wire can simulate ‘wireless’, and it also makes the prototype much simpler.</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W8/IMG_20140314_143145.jpg" alt="image"> </p>
+<p><img src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W8/IMG_20140314_143145.jpg" alt="image" /></p>
 
-<h2>Synthesis</h2>
-
-<h4>Conclusion</h4>
+<h2 id="synthesis">Synthesis</h2>
+<p>####Conclusion</p>
 
 <p>We felt that our behavior prototype was successful in providing a “quick and dirty” way to test different gesture sets that we developed. We learned a lot not only about the user’s gesture preferences, but also about the level of accuracy that the gesture recognition technology would need to account for. After that, we did an electronic prototype to provide a proof of concept and also to prove its feasibility. The user testing helped us focus by eliminating features/other solutions and reach a conclusive solution to the problem. If we were to do it all over again, we would also do a heuristic evaluation of the interface.</p>
+
 
 			</div>
 			<div id="disqus_thread"></div>
