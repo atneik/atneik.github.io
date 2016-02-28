@@ -22,9 +22,9 @@ summary: ""
 <div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
 <iframe src="//player.vimeo.com/video/103798732?title=0&amp;byline=0&amp;portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
-</br>
+<br>
 
-##Introduction
+## Introduction
 
 The capstone project during MHCI+D focused on promoting novel applications of 3D image capture and touch gesture technology in the news publishing industry. My team partnered with Intel, who challenged us to envision a system that creates value for their upcoming RealSense depth-sensing camera in the News publishing industry. 
 
@@ -52,7 +52,7 @@ To refine the solution we iterated by developing functional prototypes backed by
 
 ![image](https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/stitch-slide-pics-low/7.jpg)
 
-##Prototyping
+## Prototyping
 
 Before developing the final prototype we had several iterations of prototypes at increasing level of fidelity.
 
@@ -60,7 +60,7 @@ Before developing the final prototype we had several iterations of prototypes at
 
 The final explore prototype supported the following interactions:
 
-####Select an Article
+#### Select an Article
 
 > View the journalist-curated list of immersive articles and select to read more about it with 3D reconstruction in the background.
 
@@ -71,7 +71,7 @@ The final explore prototype supported the following interactions:
 </video>
 
 
-####Fly-in
+#### Fly-in
 
 > By tapping on start user dives down into the 3D reconstruction of the relevant place where the news took place. Fly-in gives a spatial perspective to the user.
 
@@ -81,7 +81,7 @@ The final explore prototype supported the following interactions:
   Your browser does not support HTML5 video.
 </video>
 
-####Navigate 
+#### Navigate 
 
 > Exploring a digital reconstruction of a news story’s environment as a way to deepen understanding of a situation, event, or location.
 
@@ -91,7 +91,7 @@ The final explore prototype supported the following interactions:
   Your browser does not support HTML5 video.
 </video>
 
-####Content Markers
+#### Content Markers
 
 > View multiple perspectives on the news through dynamic journalist and reader-contributed content. Linking these content markers together can generate Walkthroughs, which help create a story that users can follow.
 
@@ -102,7 +102,7 @@ The final explore prototype supported the following interactions:
 </video>
 
 
-####Filter Markers
+#### Filter Markers
 
 > Filters helps in focusing on the content markers that matter the most. This protects users from getting overwhelmed by large number of markers.
 

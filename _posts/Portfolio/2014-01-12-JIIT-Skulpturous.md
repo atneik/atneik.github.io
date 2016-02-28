@@ -15,17 +15,17 @@ Skulpturous is a 3D authoring tool which helps students, artists and possibly de
 
 I took Skulpturous to its next milestone by concentrating on three things broadly: Dynamic Customized Gestures, more Interaction techniques and better Accuracy. I accomplished these goals by: 1) Using Machine Learning for recognition of user created dynamic gestures, so now the user could create personal gestures to perform certain tasks 2) Taking inspiration from real life sculpting to create novel interaction techniques to model 3D objects 3) Increasing the precision of hand location by data fusion, here we fuse data from Kinect and multiple smart phone sensors to have a more precise estimate of hand location.
 
-####Skulpturous - Pottery
+#### Skulpturous - Pottery
 <div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
 <iframe width="100%" height="100%" src="//www.youtube.com/embed/TgfAg3GmP1c" frameborder="0"> </iframe>
 </div>
 
-####Skulpturous: 3D Art
+#### Skulpturous: 3D Art
 <div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
 <iframe width="100%" height="100%" src="//www.youtube.com/embed/f3MubFYdEtw" frameborder="0"> </iframe>
 </div>
 
-####Sklupturous: The Beginning
+#### Sklupturous: The Beginning
 <div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
 <iframe width="100%" height="100%" src="//www.youtube.com/embed/cFpJOYgHD3g" frameborder="0"> </iframe>
 </div>

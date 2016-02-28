@@ -10,9 +10,9 @@ imagesrc: ""
 permalink: /RS/post2.html
 summary: "" 
 ---
-##3D gesture interaction: technologies, platforms, applications, research
+## 3D gesture interaction: technologies, platforms, applications, research
 
-####Experts
+#### Experts
 
 **Prof. Jacob O. Wobbrock**
 
@@ -32,7 +32,7 @@ http://www.vision.ee.ethz.ch/members/get_member.cgi?lang=en&id=1
 Eindhoven University of Technology, The Netherlands
 http://www.idemployee.id.tue.nl/g.w.m.rauterberg/
 
-####Research Analysis Frameworks
+#### Research Analysis Frameworks
 
 Industry Diagnostics
 
@@ -43,7 +43,7 @@ Trend Matrix
 ![image](https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/RS/Trends%20Matrix.jpg)
 
 
-####Questions for Semi Structured Interview?
+#### Questions for Semi Structured Interview?
 
 * What do you think is the next paradigm of User Interface?
 	* Why that? Why not this?
@@ -55,7 +55,7 @@ Trend Matrix
 	* What do you think is missing?
 * Where/ In which domains do you see this technology as useful?
 
-####Potential Primary Research Questions or Topics
+#### Potential Primary Research Questions or Topics
 * Where does value come from in industries utilizing 3D gesture technology?
 * How has feedback been integrated into 3D gesture technology?
 * What AI tech exists to interpret human body language and emotion?
@@ -64,7 +64,7 @@ Trend Matrix
 * How could 3D gesture technology enable adaptive user interfaces?
 * How do ubiquitous computing systems in a built environment utilize gesture technology?
 
-####Links
+#### Links
 * Gesture Recognition in Consumer Electronics Market 2013 - 2018 - http://unified-communications.tmcnet.com/news/2014/04/11/7774345.htm 
 * http://blogs.reuters.com/india-expertzone/2013/06/03/the-road-to-smart-technology/ 
 * http://www.cs.cmu.edu/~amulet/papers/uihistory.tr.html

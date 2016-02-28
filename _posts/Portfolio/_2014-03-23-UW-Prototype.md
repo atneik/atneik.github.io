@@ -24,7 +24,7 @@ summary: ""
 Weekly Rapid Prototyping: In reverse order, from high fidelity to low fidelity. Click on the title to see the full blog post about the prototype.
 
 
-##Prototypes
+## Prototypes
 
 ### <a href="/studio/playground/2014/03/19/UW-Q2-Studio-A9.html" target="_blank"> NecX: A Head Mounted Game Controller </a>
 

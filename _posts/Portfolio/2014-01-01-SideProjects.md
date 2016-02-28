@@ -13,18 +13,18 @@ imagesrc: "https://raw.githubusercontent.com/HCDE498-598-Summer14/PresenDuino/ma
 summary: ""
 ---
 
-##PresenDuino
+## PresenDuino
 
 [Github link](https://github.com/HCDE498-598-Summer14/PresenDuino)
 
-###Presenter side
+### Presenter side
 ![image](https://raw.githubusercontent.com/HCDE498-598-Summer14/PresenDuino/master/Fritzing/PresenDuino.png)
 
 
-###Signal Side
+### Signal Side
 ![image](https://raw.githubusercontent.com/HCDE498-598-Summer14/PresenDuino/master/Fritzing/SignalSide.png)
 
-##Digital Photo Frame
+## Digital Photo Frame
 
 *Under progress*
 
@@ -32,7 +32,7 @@ summary: ""
 
 ![image](https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/frame/frame.jpg)
 
-###Introduction
+### Introduction
 
 Get some stock photography or use your pictures from Facebook to run a fullscreen slideshow on any screen. Now you can use your old tablet as a digital photo frame.
 

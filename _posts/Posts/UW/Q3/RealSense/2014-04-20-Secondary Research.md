@@ -10,10 +10,10 @@ imagesrc: ""
 permalink: /RS/post1.html
 summary: "" 
 ---
-##3D gesture interaction: technologies, platforms, applications, research
+## 3D gesture interaction: technologies, platforms, applications, research
 
 
-####What is the conventional wisdom or “state of the art” of this domain?
+#### What is the conventional wisdom or “state of the art” of this domain?
 
 1. Research
 	* Finger modelling
@@ -28,7 +28,7 @@ summary: ""
 	* Samsung’s Air Gestures
 	* Leap
 	
-####Who (businesses, institutions, regions) is doing research or innovation in the space?
+#### Who (businesses, institutions, regions) is doing research or innovation in the space?
 * Microsoft
 * PrimeSense (Apple)
 * Leap
@@ -39,23 +39,23 @@ summary: ""
 * 3dim
 * http://www.omekinteractive.com/
 
-####Who are notable experts on this topic? Practioners or researchers/academics?
+#### Who are notable experts on this topic? Practioners or researchers/academics?
 
 -
 
-####How does value flow in this domain? (financial or other)
+#### How does value flow in this domain? (financial or other)
 * New experience
 * Immersive
 * Full body
 * Makes certain activities easier.
 * Experience Economy
 
-####What are the social or cultural patterns influences, trends in this domain?
+#### What are the social or cultural patterns influences, trends in this domain?
 * Hard to adopt by masses unless provides value
 * Currently only enthusiast and early adopters
 * But, gaming industry is well aware
 
-####Are there clear problems or challenges in this space that have yet to be addressed?
+#### Are there clear problems or challenges in this space that have yet to be addressed?
 
 * Value by 3D interaction should be greater than existing techniques
 
@@ -67,7 +67,7 @@ summary: ""
 
 * What are important quantitative facts for this topic?
 
-####What is the potential role of HCI?
+#### What is the potential role of HCI?
 
 * Come up with unambiguous set of interactions to provide all together new 
 
