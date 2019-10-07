@@ -1,7 +1,6 @@
 ---
 name: Aniket Handa
 uwnetid: aniket
-email: aniket@uw.edu
 caption: Usual Departure Delay from Seattle
 dataset: flight
 what: CSE 512 Assignment 2
