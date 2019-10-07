@@ -15,7 +15,7 @@ links:
  - "Project Website": "http://dynabots.com"
 size: 1
 permalink: /RS.html
-imagesrc: "https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/ipad-stitch.jpeg"
+imagesrc: "/images/Projects/stitch/ipad-stitch.jpeg"
 summary: ""
 ---
 
@@ -30,33 +30,33 @@ The capstone project during MHCI+D focused on promoting novel applications of 3D
 
 Before hopping onto secondary research we evaluated existing spatial sensing platforms, and meanwhile also researched current publishing industry.
 
-![image](https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/stitch-slide-pics-low/3.jpg)
+![image]({{ site.github.url }}/images/Projects/stitch/stitch-slide-pics-low/3.jpg)
 
 Then, our secondary research highlighted that the way people consume news is changing, due to its online access. However, the current news business model still supports print-based news, rather than digital. On the other hand, emerging technologies are enabling more immersive, collaborative experiences.
 
-![image](https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/stitch-slide-pics-low/4.jpg)
+![image]({{ site.github.url }}/images/Projects/stitch/stitch-slide-pics-low/4.jpg)
 
 We combined these insights to form the following design question.
 
-![image](https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/stitch-slide-pics-low/1.jpg)
+![image]({{ site.github.url }}/images/Projects/stitch/stitch-slide-pics-low/1.jpg)
 
 Our design response was Stitch:
 
-![image](https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/stitch-slide-pics-low/0.jpg)
+![image]({{ site.github.url }}/images/Projects/stitch/stitch-slide-pics-low/0.jpg)
 
 We conceptualized the whole system but concentrated on one part of it which delth with exploration of news media on a tablet. Following the system diagram.
 
-![image](https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/stitch-slide-pics-low/5.jpg)
+![image]({{ site.github.url }}/images/Projects/stitch/stitch-slide-pics-low/5.jpg)
 
 To refine the solution we iterated by developing functional prototypes backed by user testing and evaluation. We took the help of rapid prototyping to answer the following questions:
 
-![image](https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/stitch-slide-pics-low/7.jpg)
+![image]({{ site.github.url }}/images/Projects/stitch/stitch-slide-pics-low/7.jpg)
 
 ## Prototyping
 
 Before developing the final prototype we had several iterations of prototypes at increasing level of fidelity.
 
-![image](https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/stitch-slide-pics-low/6.jpg)
+![image]({{ site.github.url }}/images/Projects/stitch/stitch-slide-pics-low/6.jpg)
 
 The final explore prototype supported the following interactions:
 
@@ -65,8 +65,8 @@ The final explore prototype supported the following interactions:
 > View the journalist-curated list of immersive articles and select to read more about it with 3D reconstruction in the background.
 
 <video width="100%" loop autoplay>
-  <source src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/movie-trims/article.mp4" type="video/mp4">
-  <source src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/movie-trims/article.webm" type="video/webm">
+  <source src="{{ site.github.url }}/images/Projects/stitch/movie-trims/article.mp4" type="video/mp4">
+  <source src="{{ site.github.url }}/images/Projects/stitch/movie-trims/article.webm" type="video/webm">
   Your browser does not support HTML5 video.
 </video>
 
@@ -76,8 +76,8 @@ The final explore prototype supported the following interactions:
 > By tapping on start user dives down into the 3D reconstruction of the relevant place where the news took place. Fly-in gives a spatial perspective to the user.
 
 <video width="100%" loop autoplay>
-  <source src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/movie-trims/fly.mp4" type="video/mp4">
-  <source src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/movie-trims/fly.webm" type="video/webm">
+  <source src="{{ site.github.url }}/images/Projects/stitch/movie-trims/fly.mp4" type="video/mp4">
+  <source src="{{ site.github.url }}/images/Projects/stitch/movie-trims/fly.webm" type="video/webm">
   Your browser does not support HTML5 video.
 </video>
 
@@ -86,8 +86,8 @@ The final explore prototype supported the following interactions:
 > Exploring a digital reconstruction of a news story’s environment as a way to deepen understanding of a situation, event, or location.
 
 <video width="100%" loop autoplay>
-  <source src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/movie-trims/nav.mp4" type="video/mp4">
-  <source src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/movie-trims/nav.webm" type="video/webm">
+  <source src="{{ site.github.url }}/images/Projects/stitch/movie-trims/nav.mp4" type="video/mp4">
+  <source src="{{ site.github.url }}/images/Projects/stitch/movie-trims/nav.webm" type="video/webm">
   Your browser does not support HTML5 video.
 </video>
 
@@ -96,8 +96,8 @@ The final explore prototype supported the following interactions:
 > View multiple perspectives on the news through dynamic journalist and reader-contributed content. Linking these content markers together can generate Walkthroughs, which help create a story that users can follow.
 
 <video width="100%" loop autoplay>
-  <source src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/movie-trims/marker.mp4" type="video/mp4">
-  <source src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/movie-trims/marker.webm" type="video/webm">
+  <source src="{{ site.github.url }}/images/Projects/stitch/movie-trims/marker.mp4" type="video/mp4">
+  <source src="{{ site.github.url }}/images/Projects/stitch/movie-trims/marker.webm" type="video/webm">
   Your browser does not support HTML5 video.
 </video>
 
@@ -107,8 +107,8 @@ The final explore prototype supported the following interactions:
 > Filters helps in focusing on the content markers that matter the most. This protects users from getting overwhelmed by large number of markers.
 
 <video width="100%" loop autoplay>
-  <source src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/movie-trims/filter.mp4" type="video/mp4">
-  <source src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/stitch/movie-trims/filter.webm" type="video/webm">
+  <source src="{{ site.github.url }}/images/Projects/stitch/movie-trims/filter.mp4" type="video/mp4">
+  <source src="{{ site.github.url }}/images/Projects/stitch/movie-trims/filter.webm" type="video/webm">
   Your browser does not support HTML5 video.
 </video>
 

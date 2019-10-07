@@ -16,7 +16,7 @@ tags:
  - Behavioral
 author: Aniket Handa
 size: 1
-imagesrc: "https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/ttt/nexus_framed-noShadow.png"
+imagesrc: "/images/Projects/ttt/nexus_framed-noShadow.png"
 summary: ""
 ---
 ##Summary
@@ -30,7 +30,7 @@ Weekly Rapid Prototyping: In reverse order, from high fidelity to low fidelity. 
 
 A head mounted game controller. Fun while excessing your neck!
 
-![image](https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W8/IMG_2641.JPG)
+![image]({{ site.github.url }}/images/Studio/Q2/W8/IMG_2641.JPG)
 
 <a href="/studio/playground/2014/03/19/UW-Q2-Studio-A9.html" target="_blank"> More </a>
 	
@@ -38,7 +38,7 @@ A head mounted game controller. Fun while excessing your neck!
 
 Whats better than imagining something and then just printing it! 3D modeling tools are getting more easier to use and now with 3D printing more accessible than ever before, Prototyping is taken to a whole new level. Here I show showcase some of my early experiments with Rhinoceros, OpenSCAD and the MakerBot.
 
-![image](https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W7/3.jpg)
+![image]({{ site.github.url }}/images/Studio/Q2/W7/3.jpg)
 
 Go ahead [download](http://www.thingiverse.com/thing:267179) this fancy bottle opener from Thingiverse and print it!
 
@@ -48,7 +48,7 @@ Go ahead [download](http://www.thingiverse.com/thing:267179) this fancy bottle o
 
 A step counter using Arduino Uno, a LCD and two pressure sensors
 
-![image](https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W6/8.JPG)
+![image]({{ site.github.url }}/images/Studio/Q2/W6/8.JPG)
 
 <a href="/studio/playground/2014/03/01/UW-Q2-Studio-A7.html" target="_blank"> More </a>
 
@@ -69,7 +69,7 @@ Here is the link to the Android App I developed. [Tweak the Tweets](https://gith
 
 Website Prototype of our very own DUB site..
 
-![sketch](https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W5/1.jpg)
+![sketch]({{ site.github.url }}/images/Studio/Q2/W5/1.jpg)
 
 Live link [here](http://atneik.github.io/dub-final/home.html)
 
@@ -103,7 +103,7 @@ I try my hands on video prototyping and create a commercial-like video instead..
 
 In this weeklong project with focus on thinking with hands and in 3D, I learned Model Prototyping a Handheld immersion blender. The product, i.e. the hand blender, needs to be developed for OXO brand, who are known for practicing universal design principles. The design of the prototype tries to adhere to the identity of the brand.
 
-![image](https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W3/23.jpg)
+![image]({{ site.github.url }}/images/Studio/Q2/W3/23.jpg)
 
 <a href="/studio/playground/2014/01/25/UW-Q2-Studio-A2.html" target="_blank" > More </a>
 
@@ -122,7 +122,7 @@ Design and build a prototype of an EcoATM within 2 hours.
 
 “Wearables are the future!”, as deemed by majority of futurist. Together with a smartphone they can provide altogether new experiences. Here we choose a Smartwatch as the wearable and try to understand the interplay between the two devices. The accessibility of a Smartwatch and low friction involved in using it can be exploited to provide omnipresent computing. This week long endeavour used the technique of paper prototyping to quickly iterate over various designs possible for a Fitness App. The App helps user create routines in a smartphone and then help them follow the same while working out though the smartwatch as a medium. The system is named Gym Mate.
 
-![image](https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W2/3.jpg)
+![image]({{ site.github.url }}/images/Studio/Q2/W2/3.jpg)
 
 <a href="/studio/playground/2014/01/19/UW-Q2-Studio-A1.html" target="_blank" > More </a>
 
@@ -130,7 +130,7 @@ Design and build a prototype of an EcoATM within 2 hours.
 	
 Paper prototyping an Tablet App for ordering coffee at a Cafe. The project was narrowed to include only three kinds of coffee (Espresso, Macchiato and Cappuccino) coming in three different sizes. So, a total of nine offerings.
 	
-![image](https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W1/2.jpg)
+![image]({{ site.github.url }}/images/Studio/Q2/W1/2.jpg)
 
 <a href="/studio/playground/2014/01/13/UW-Q2-Studio-E1.html" target="_blank" > More </a>
 

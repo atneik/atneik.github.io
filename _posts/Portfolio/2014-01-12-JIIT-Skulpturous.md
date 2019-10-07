@@ -7,7 +7,7 @@ categories: project
 tags: Kinect 3D Java OpenNI OpenGL
 author: Aniket Handa
 size: 1
-imagesrc: "https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/skulp/skulpturous2.jpg"
+imagesrc: "/images/Projects/skulp/skulpturous2.jpg"
 summary: ""
 ---
 

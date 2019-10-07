@@ -36,11 +36,11 @@ http://www.idemployee.id.tue.nl/g.w.m.rauterberg/
 
 Industry Diagnostics
 
-![image](https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/RS/Industry%20Diagnostics.jpg)
+![image]({{ site.github.url }}/images/Projects/RS/Industry%20Diagnostics.jpg)
 
 Trend Matrix
 
-![image](https://dl.dropboxusercontent.com/u/23289062/siteImages/Projects/RS/Trends%20Matrix.jpg)
+![image]({{ site.github.url }}/images/Projects/RS/Trends%20Matrix.jpg)
 
 
 #### Questions for Semi Structured Interview?
